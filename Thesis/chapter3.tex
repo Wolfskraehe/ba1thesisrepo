@@ -12,7 +12,7 @@ The basic steps of an AIS can be summarized as [TAN16]:
 	\item 	Initialize/present antigen
 	\item 	Initialize antibody population
 	\item 	Calculate affinity for each antibody to the antigen
-	\item 	Check lifecycle of each antibody and update it
+	\item 	Check life cycle of each antibody and update it
 	\item 	If stopping condition met go to 6 else go to 3
 	\item 	Output antibody population
 \end{enumerate}\\\\Step 2 and Step 4 are the steps where negative selection and clonal selection will be relevant in most forms of AIS algorithms.\\\\
@@ -34,9 +34,9 @@ Detector & 0011101
 In the example above the first 3 continues bit match in both strings. If the threshold of the detector is r = 3, it would react to this bit string if the number of continues bits is 3 or higher.
 In case of recommender systems another way to measure the affinity is to use the Pearson correlation [5]. But the Pearson correlation is not suited for optimization tasks or specifically the use in the travelling salesman problem. 
 \section{Clonal Selection in an AIS}
-Negative Selection is good for generating a population of detectors. To mimic the learning abilites of the biological immune system, the clonal selection principle can be used. The CLONALG algorithm was proposed by [DEC02] in 2002 and is the foundation of many AIS algorithms that use the clonal selection principle. The CLONALG is also present in more recent variations of the AIS like in aiNet and in algorithms the utilize the immune network theory [CITACION NEEDED]. This thesis will focus on the CLONALG algorithm and some of its variations, as these algorithms will be used to generate the data in \ref{chap:eva}.
+Negative Selection is good for generating a population of detectors. To mimic the learning abilities of the biological immune system, the clonal selection principle can be used. The CLONALG algorithm was proposed by [DEC02] in 2002 and is the foundation of many AIS algorithms that use the clonal selection principle. The CLONALG is also present in more recent variations of the AIS like in aiNet and in algorithms the utilize the immune network theory [CITACION NEEDED]. This thesis will focus on the CLONALG algorithm and some of its variations, as these algorithms will be used to generate the data in \ref{chap:eva}.
 \subsection{CLONALG}
-The CLONALG algorithm mimics the clonal selection of the BIS on an abstract level. It will be applied mainly at step 4 in the basic AIS sequence in \ref{chap:ais}. The algorithm starts with generating a initial population C. It then calculates the affinity of the population to an antigen which is called the fitness. The n best antibodies of the population C will be chosen, determined by a fixed fitness value, and form the antibody set S. Every antibody in S will be cloned and represents our clone set P. Now the clone set will be mutated, every clone get randomly changed relatively to its affinity value. After the mutation the n best clones out of P are chosen. Then a new population will be generated and the process begins annew till a stopping condition is met.\\
+The CLONALG algorithm mimics the clonal selection of the BIS on an abstract level. It will be applied mainly at step 4 in the basic AIS sequence in \ref{chap:ais}. The algorithm starts with generating a initial population C. It then calculates the affinity of the population to an antigen which is called the fitness. The n best antibodies of the population C will be chosen, determined by a fixed fitness value, and form the antibody set S. Every antibody in S will be cloned and represents our clone set P. Now the clone set will be mutated, every clone get randomly changed relatively to its affinity value. After the mutation the n best clones out of P are chosen. Then a new population will be generated and the process begins anew till a stopping condition is met.\\
 A simple pseudocode can look like this, based on [RIFF09]:
 \begin{algorithm}
 	Generate initial population C of A antibodies\\
@@ -47,11 +47,11 @@ A simple pseudocode can look like this, based on [RIFF09]:
 	Mutate(P)\\
 	C= Select the n best antibodies out of P\\
 	C= C + New population A-n}
-	\caption{Simple CLONALG pseudocode}
+	\caption{Simple CLONALG pseudo code}
 \end{algorithm}\\
-The initial CLONALg algorithm as proposed by [DEC02] operates with static paramters and don't adjust anything besides the mutation. Different parameters are needed for different applications fields as was also stated in [DEC02]. This paramters must be changed beforehand and can't adapt dynamically during the runtime of the algorithm.
+The initial CLONALG algorithm as proposed by [DEC02] operates with static parameters and don't adjust anything besides the mutation. Different parameters are needed for different applications fields as was also stated in [DEC02]. This parameters must be changed beforehand and can't adapt dynamically during the runtime of the algorithm.
 \subsection{Adaptive CLONALG variants}
-To make the algorithm more efficient and adaptive, some variants where proposed. There are different paramter control stragegies for the CLONALG algorithm. One of these variants is proposed by [RIFF09]. It is based on the idea of reinforcement learning. The antibody sets will be either rewarded for a high affinity or penalized for a low one. This will be achieved through population control. The reward is the increase in antibody population for a given set and the penalty is the decrease in population [RIFF09]. 
+To make the algorithm more efficient and adaptive, some variants where proposed. There are different parameter control strategies for the CLONALG algorithm. One of these variants is proposed by [RIFF09]. It is based on the idea of reinforcement learning. The antibody sets will be either rewarded for a high affinity or penalized for a low one. This will be achieved through population control. The reward is the increase in antibody population for a given set and the penalty is the decrease in population [RIFF09]. 
  
 
 

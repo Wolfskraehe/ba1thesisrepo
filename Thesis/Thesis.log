@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.19)  19 NOV 2018 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.19)  20 NOV 2018 18:37
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -673,12 +673,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--26
 [6]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 50.
-
-Overfull \hbox (1.21799pt too wide) in paragraph at lines 39--53
-\OT1/cmr/m/n/12 The ini-tial CLON-ALg al-go-rithm as pro-posed by [DEC02] op-er
--ates with static paramters
- []
-
 ) [7]
 \openout2 = `chapter4.aux'.
 
@@ -852,7 +846,7 @@ ublic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on Thesis.pdf (22 pages, 157188 bytes).
+Output written on Thesis.pdf (22 pages, 157312 bytes).
 PDF statistics:
  267 PDF objects out of 1000 (max. 8388607)
  64 named destinations out of 1000 (max. 500000)
