@@ -1,10 +1,9 @@
 \chapter{Evaluation}
 \label{chap:eva}
-
+\section{Setup}
 The CLONALG algorithm will be applied to a set of 17 different TSP problems from the TSP library TSPLIB95 [1]. The elitist ant colony algorithm will be applied to the same set of problems.\\\\ 
 The stopping criteria will be as follows:
 \begin{enumerate}
-	\item 	Best solution found
 	\item 	No improvement after a set amount of evaluations
 	\item 	Timeout after a set amount of ms
 \end{enumerate}\\
@@ -13,8 +12,9 @@ The criteria for the results are:
 	\item 	Score
 	\item 	Time in ms
 	\item 	Evaluations	
+	\item  	Percentage of optimal score
 \end{enumerate}\\
-The score criteria is only relevant if stopping criteria 2 or 3 are chosen. In Case of stopping criteria 1, the score must be the best possible score. The ability to find the best solution will also be treated as criteria. The score is measured as the summarized Euclidean distance of the presented best tour. To compare the results the mean error relative to the optimal score will be used. The CLONALG algorithm will be applied to the problem set multiple times with different parameters.
+The score is measured as the summarized Euclidean distance of the presented best tour. To compare the results the percentage of the optimal score will be used. The algorithm will be run multiple times on one TSP therefore the arithmetic mean of each criteria will be the end result. The CLONALG algorithm will be applied to the problem set multiple times with different parameters.
 The parameters which will be altered are
 \begin{enumerate}
 	\item 	Population size
@@ -25,4 +25,7 @@ The parameters which will be altered are
 The first set of parameters will be the default parameters provided by the OAT. The second one are the parameters that are proposed by DeCastro [DEC02] for solving TSP problems about the size of 30 nodes.\\
 The adaptive variant of the CLONALG algorithm will use the default vaulues at the beginning and adjust the paramaters during runtime.\\
 To measure the results, a modified version of the optimization algorithm toolkit (OAT) [2] will be used. The changes are a slightly different set of TSP Problems used in the domain and the addition of an adaptive CLONALG hybrid algorithm. The used TSP problems are listed in the appendix. The distances between the nodes in the TSP problem are measured as Euclidean distance. The implemented CLONALG algorithm is based on the specifications in [DEC02]. The adaptive variants expand the concept based on [RIFF09] and [GARRETT04].
-Both algorithms will be applied 30 times on every single TSP problem. 
+Both algorithms will be applied 100 times on every single TSP problem. 
+\section{Results}
+\subsection{No improvements}
+The algorithms are run 100 times on every TSP. The stopping criteria are no improvements after 10000 iterations of the algorithm. 
