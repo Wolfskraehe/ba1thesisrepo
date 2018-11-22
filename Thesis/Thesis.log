@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.20)  21 NOV 2018 21:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.20)  22 NOV 2018 20:43
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -673,7 +673,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--26
 [6]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 50.
-) [7]
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--54
+
+ []
+
+[7]) [8]
 \openout2 = `chapter4.aux'.
 
  (chapter4.tex
@@ -702,11 +707,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-[8
+[9
 
 
 
-]) [9]
+]) [10]
 \openout2 = `chapter5.aux'.
 
  (chapter5.tex
@@ -763,16 +768,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--31
 
  []
 
-[10
+[11
 
 
 
-]) [11]
+]) [12]
 \openout2 = `chapter6.aux'.
 
  (chapter6.tex
 Chapter 6.
-) [12
+) [13
 
 
 
@@ -781,7 +786,7 @@ Chapter 6.
 
  (chapter7.tex
 Chapter 7.
-) [13
+) [14
 
 
 
@@ -795,7 +800,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--23
 
  []
 
-[14
+[15
 
 
 
@@ -803,13 +808,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--23
 \tf@lof=\write4
 \openout4 = `Thesis.lof'.
 
- [15
+ [16
 
 ] (Thesis.lot)
 \tf@lot=\write5
 \openout5 = `Thesis.lot'.
 
-) [16
+) [17
 
 ] (Thesis.bbl (Thesis.brf)
 \tf@brf=\write6
@@ -821,7 +826,7 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
- [17
+ [18
 
 
 ]
@@ -836,8 +841,8 @@ Package rerunfilecheck Info: File `Thesis.brf' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 8161 strings out of 492969
- 122917 string characters out of 3135849
+ 8162 strings out of 492969
+ 122924 string characters out of 3135849
  245203 words of memory out of 3000000
  11755 multiletter control sequences out of 15000+200000
  9517 words of font info for 35 fonts, out of 3000000 for 9000
@@ -852,9 +857,9 @@ ublic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on Thesis.pdf (22 pages, 159524 bytes).
+Output written on Thesis.pdf (23 pages, 160621 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
+ 283 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
