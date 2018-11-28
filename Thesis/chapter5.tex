@@ -2,12 +2,7 @@
 \label{chap:eva}
 \section{Setup}
 The CLONALG algorithm will be applied to a set of 17 different TSP problems from the TSP library TSPLIB95 [1]. The elitist ant colony algorithm will be applied to the same set of problems.\\\\ 
-The stopping criteria will be as follows:
-\begin{enumerate}
-	\item 	No improvement after a set amount of evaluations
-	\item 	Timeout after a set amount of ms
-\end{enumerate}\\
-No improvement means that the algorithm has not found a shorter route in it's actual iteration compared to the last one, this is often also called stagnation. 
+The stopping criteria will be no improvement after a set amount of evaluations. No improvement means that the algorithm has not found a shorter route in it's actual iteration compared to the last one, this is often also called stagnation. 
 The criteria for the results are:
 \begin{enumerate}
 	\item 	Score
@@ -15,7 +10,7 @@ The criteria for the results are:
 	\item 	Evaluations	
 	\item  	Percentage of optimal score
 \end{enumerate}\\
-The score is measured as the summarized Euclidean distance of the presented best tour. To compare the results the percentage of the optimal score will be used. The algorithm will be run multiple times on one TSP therefore the arithmetic mean of each criteria will be the end result. The CLONALG algorithm will be applied to the problem set multiple times with different parameters.
+The score is measured as the summarized Euclidean distance of the presented best tour. To compare the results the relative distance to the optimal score will be used. The algorithm will be run multiple times on one TSP therefore the arithmetic mean of each criteria will be the end result. The CLONALG algorithm will be applied to the problem set multiple times with different parameters. The adaptive algorithms will be applied only once because of the dynamic parameters.
 The parameters which will be altered are
 \begin{enumerate}
 	\item 	Population size
@@ -30,4 +25,4 @@ Both algorithms will be applied 100 times on every single TSP problem.\\\\
 The hardware is a i5-3320M dual core cpu with 2,60ghz each and 8gb of ram, run on a Windows 10 operating system with only the minimal background tasks. All cpu and ram usage shown in this thesis is after other processes are taken into account.
 \section{Results}
 \subsection{No improvements}
-The algorithms are run 100 times on every TSP. The stopping criteria are no improvements after 10000 iterations of the algorithm. The cpu usage spiked around 58\% and was average around 30\%. 
+The algorithms are run 100 times on every TSP. The stopping criteria are no improvements after 10000 iterations of the algorithm. This number is chosen to give the algorithm enough time without restricting it to es specific amount of seconds. The cpu usage spiked around 58\% and was average around 30\% for all algorithms.  
