@@ -1,7 +1,7 @@
 \chapter{Evaluation}
 \label{chap:eva}
 \section{Setup}
-The CLONALG algorithm will be applied to a set of 17 different TSP problems from the TSP library TSPLIB95 [1]. The elitist ant colony algorithm will be applied to the same set of problems.\\\\ 
+The CLONALG algorithm will be applied to a set of 17 different TSP problems from the TSP library TSPLIB95 [1]. The implementation follows the specification in [DEC02] and is provided by the OAT. The greedy search algorithm will be applied to the same set of problems. This algorithm is provided by the author of the OAT and uses a nearest neighbour technique with mutation and it is quite effective in solving the provided TSP.\\\\ 
 The stopping criteria will be no improvement after a set amount of evaluations. No improvement means that the algorithm has not found a shorter route in it's actual iteration compared to the last one, this is often also called stagnation. 
 The criteria for the results are:
 \begin{enumerate}
@@ -10,11 +10,12 @@ The criteria for the results are:
 	\item 	Evaluations	
 	\item  	Percentage of optimal score
 \end{enumerate}\\
-The score is measured as the summarized Euclidean distance of the presented best tour. To compare the results the relative distance to the optimal score will be used. The algorithm will be run multiple times on one TSP therefore the arithmetic mean of each criteria will be the end result. The CLONALG algorithm will be applied to the problem set multiple times with different parameters. The adaptive algorithms will be applied only once because of the dynamic parameters.
+The score is measured as the summarized Euclidean distance of the presented best tour. The algorithm will be run multiple times on one TSP therefore the arithmetic mean of each criteria will be the end result. To compare the results the mean average error (MAE) of the average score will be used. The MAE is composed from the difference between the score of both algorithms divided through the score of the main compared algorithm, if we want to compare the performance of algorithm A1 to A2 the MAE is calculated as $(A2-A1)/A1$. Positive MAE means better performance. The CLONALG algorithm will be applied to the problem set multiple times with different parameters. The adaptive algorithms will be applied only once because of the dynamic parameters.
+\newpage
 The parameters which will be altered are
 \begin{enumerate}
 	\item 	Population size
-	\item 	Mutationfactor
+	\item 	Clone factor
 	\item 	Selection size
 	\item 	Random replacements	
 \end{enumerate}\\
@@ -22,7 +23,44 @@ The first set of parameters will be the default parameters provided by the OAT. 
 The adaptive variant of the CLONALG algorithm will use the default vaulues at the beginning and adjust the paramaters during runtime.\\
 To measure the results, a modified version of the optimization algorithm toolkit (OAT) [2] will be used. The changes are a slightly different set of TSP Problems used in the domain and the addition of an adaptive CLONALG hybrid algorithm. The used TSP problems are listed in the appendix. The distances between the nodes in the TSP problem are measured as Euclidean distance. The implemented CLONALG algorithm is based on the specifications in [DEC02]. The adaptive variants expand the concept based on [RIFF09] and [GARRETT04].
 Both algorithms will be applied 100 times on every single TSP problem.\\\\
-The hardware is a i5-3320M dual core cpu with 2,60ghz each and 8gb of ram, run on a Windows 10 operating system with only the minimal background tasks. All cpu and ram usage shown in this thesis is after other processes are taken into account.
+The hardware is a i5-3320M dual core cpu with 2,60ghz each and 8gb of RAM, run on a Windows 10 operating system with only the minimal background tasks. All cpu and RAM usage shown in this thesis is after other processes are taken into account.
+\begin{algorithm}[b]
+	Set strategy paramater Sp\\
+	Generate initial population C of A antibodies\\
+	Oc=Calculate Fitness(C)\\
+	\While{stopping condition not met}{
+		S= Select the n best antibodies from C\\
+		P= Generate clones of the antibodies in S\\
+		Mutate(P)\\
+		C= Select the n best antibodies out of P\\
+		C= C + New population A-n\\
+			If C has better fitness than Oc then\\
+			 n=Sp * 1.3 OR n= Sp/1.3\\
+			 else\\
+		 	n=n\\
+		 	end if\\
+	}
+	\caption{CLONALG variant with dynamic selection size}
+	\label{algo2}
+\end{algorithm}\\ 
+\begin{table}[p b ]
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		& C   & n   & B   & d  \\ \hline
+		Default & 50  & 50  & 0.1 & 5  \\ \hline
+		Tuned   & 300 & 150 & 2.0 & 60 \\ \hline
+	\end{tabular}
+	\caption{Tuning parameters}
+	\label{tuning}
+\end{table} 
+\subsection{Evolution Strategy Parameter Control}
+The first CLONALG variation is based on [Garret04] and uses a idea from the evolution strategy[CITATION NEEDED]. The original managed to eliminate all parameters except population size from the CLONALG algorithm. This thesis uses a variant where the selection size n is eliminated. This is comparable to Variant C1-C4 from [Garret04]. It uses a strategy parameter which will adjust the selection size. The strategy parameter itself will be adjusted by a evolution strategy constant of 1.3. This constant was empirically tested and proofed to be most effective [Garret04]. The adjustment is randomized, the strategy parameter will be either multiplied or divided by the constant based on a 50\% chance. The strategy parameter itself will alter the selection size on each evaluation. The evolution strategy calls this evolution approximated by self evolution, however the difference to the original evolution strategy is, that we adjust a parameter indirectly through another parameter [Garret04]. The changes made to the original pseudo code in chapter \ref{chap:ais} are shown in algorithm \ref{algo2}. This variant will be called CLONALG ESPC.
 \section{Results}
-\subsection{No improvements}
-The algorithms are run 100 times on every TSP. The stopping criteria are no improvements after 10000 iterations of the algorithm. This number is chosen to give the algorithm enough time without restricting it to es specific amount of seconds. The cpu usage spiked around 58\% and was average around 30\% for all algorithms.  
+\subsection{CLONALG un-tuned}
+The algorithms are run 100 times on every TSP. The stopping criteria are no improvements after 10000 iterations of the algorithm. This number is chosen to give the algorithm enough time without restricting it to a specific amount of seconds. The cpu usage spiked around 58\% and was average around 30\% for all algorithms. This is because the more costly operations like sorting, selection, cloning and mutation will be done in exactly the same way in all algorithms.\\
+The parameters for the original CLONALG are shown in Table \ref{tuning}.\\
+The parameter C is the initial population, n is the selection size for cloning, B is the cloning factor (how many clones of the chosen n will be done) and d are the random replacements to keep the new population partially randomized. [DEC02] proposed some tuning to the default parameters for more efficiency in solving TSP. The replacement value d should always be between 5-20\% of the population. Higher ratios tend to randomize too much while lower ratios can still produce good results but less reliable and efficient.\\\\
+When comparing the results it is clearly seen that the CLONALG algorithm is worse on average than the greedy search algorithm [TABLE NEEDED]. However the CLONALG was able to find the best solution to ulysses22 with a MAE of 0.117 while the greedy search algorithm could not. The overall time for solving all problems was also shorter for the CLONALG. The number of evaluations is mostly smaller for the CLONALG which shows that stagnation started earlier in this algorithm. The average MAE compared to the greedy algorithm is -0.524. The mean average error of -0.009 is small for berlin52 which highlights that CLONALG performs equal or better on small TSP under 50 nodes but is less efficiant at more difficult TSP than the greedy algorithm.
+\subsection{CLONALG tuned}
+Comparing the tuned algorithm to the original one shows, that the tuned parameter are not suited for this TSP setup. The tuned CLONALG has a worse average score in solving all 17 TSP compared to the untuned CLONALG. The unexpected outcome is, that the tuned algorithm performs better if the TSP is larger. The MAE on pr2392, which is the largest TSP in the setup, is only -0.014 but the MAE of ulysses22, the smallest TSP, is -0.305. The algorithm could not find the best solution for ulysses22. The average MAE was -0.253 compared to the untuned algorithm. This is especially unexpected because the parameters where tuned by [DEC02] for a 30 node TSP. In their tests, the tuned algorithm behaved better on this specific TSP than the un-tuned one. This shows that the chosen parameters do not work well when the stopping criteria are 10000 evaluations without improvement.
+\subsection{CLONALG ESPC}
