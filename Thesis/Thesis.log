@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.19)  6 DEC 2018 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.20)  7 DEC 2018 17:11
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -30,7 +30,7 @@ File: switch.def 2018/11/13 3.27 Babel switching mechanism
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
@@ -58,14 +58,14 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip43
 
-(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\ifoddpage\ifoddpage.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 \c@checkoddpage=\count92
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\relsize\relsize.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\relsize\relsize.sty"
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip44
@@ -133,7 +133,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) (C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip62
 \subfigcapskip=\skip63
@@ -149,7 +149,7 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip66
 \subfig@bottom=\skip67
 )
@@ -158,7 +158,7 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 )
-(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -199,7 +199,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks20
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip68
@@ -212,7 +212,7 @@ s
 \f@nch@O@olf=\skip75
 \f@nch@O@orf=\skip76
 )
-(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\colortbl\colortbl.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
 Package: colortbl 2018/05/02 v1.0c Color table columns (DPC)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
@@ -426,7 +426,7 @@ LaTeX Font Info:    ... okay on input line 84.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count116
 \scratchdimen=\dimen128
@@ -803,38 +803,211 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [12]
-
-LaTeX Warning: Reference `tuning' on page 13 undefined on input line 51.
-
-)
-Runaway argument?
-{table}[H C] \begin {tabular}{|c|c|c|c|c|} \hline & C & n & B & d \\ \ETC.
-! File ended while scanning use of \@float@HH.
-<inserted text> 
-                \par 
-l.130 \include{chapter5}
-                        
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--130
+Underfull \hbox (badness 10000) in paragraph at lines 50--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--130
+Underfull \hbox (badness 10000) in paragraph at lines 50--62
 
  []
 
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\OT1/cmr/m/n/12 Best Per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\OT1/cmr/m/n/12 MAE com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\OT1/cmr/m/n/12 pared to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\OT1/cmr/m/n/12 Average
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\OT1/cmr/m/n/12 Eval-u-a-
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 69--69
+[]|\OT1/cmr/m/n/12 891.8960838| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 70--70
+[]|\OT1/cmr/m/n/12 24.22434368| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 71--71
+[]|\OT1/cmr/m/n/12 338.0068155| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 72--72
+[]|\OT1/cmr/m/n/12 1143.006814| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 73--73
+[]|\OT1/cmr/m/n/12 3635.889819| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 74--74
+[]|\OT1/cmr/m/n/12 147.5808763| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 75--75
+[]|\OT1/cmr/m/n/12 123.7037037| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 76--76
+[]|\OT1/cmr/m/n/12 663.6618999| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 78--78
+[]|\OT1/cmr/m/n/12 381.0310966| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 79--79
+[]|\OT1/cmr/m/n/12 451.7003676| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 80--80
+[]|\OT1/cmr/m/n/12 210.6518283| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/12 29.57746479| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 82--82
+[]|\OT1/cmr/m/n/12 121.9330855| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 83--83
+[]|\OT1/cmr/m/n/12 307.2690537| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 84--84
+[]|\OT1/cmr/m/n/12 311.4318762| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 85--85
+[]|\OT1/cmr/m/n/12 295.9096459| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\OT1/cmr/m/n/12 MAE com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\OT1/cmr/m/n/12 pared to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\OT1/cmr/m/n/12 Average
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\OT1/cmr/m/n/12 Eval-u-a-
+ []
+
+
+Overfull \hbox (24.05997pt too wide) in paragraph at lines 93--114
+[][] 
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/12 Average
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/12 Best
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/12 Best Per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/12 MAE com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\OT1/cmr/m/n/12 pared to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/12 Average
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\OT1/cmr/m/n/12 Eva-lu-
+ []
+
+
+Overfull \hbox (1.89378pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/12 173022.70| 
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 127--127
+[]|\OT1/cmr/m/n/12 14259316.88| 
+ []
+
+
+Overfull \hbox (1.47493pt too wide) in paragraph at lines 127--127
+[]|\OT1/cmr/m/n/12 14060841| 
+ []
+
+
+Overfull \hbox (1.89378pt too wide) in paragraph at lines 135--135
+[]|\OT1/cmr/m/n/12 118097.23| 
+ []
+
+
+Overfull \hbox (43.01968pt too wide) in paragraph at lines 120--141
+[][] 
+ []
+
+) [15] [16]
 \openout2 = `chapter6.aux'.
 
  (chapter6.tex
 Chapter 6.
-) [14
+) [17
 
 
 
@@ -843,7 +1016,7 @@ Chapter 6.
 
  (chapter7.tex
 Chapter 7.
-) [15
+) [18
 
 
 
@@ -857,7 +1030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--23
 
  []
 
-[16
+[19
 
 
 
@@ -865,13 +1038,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--23
 \tf@lof=\write4
 \openout4 = `Thesis.lof'.
 
- [17
+ [20
 
 ] (Thesis.lot)
 \tf@lot=\write5
 \openout5 = `Thesis.lot'.
 
-) [18
+) [21
 
 ] (Thesis.bbl (Thesis.brf)
 \tf@brf=\write6
@@ -882,21 +1055,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--23
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
-
-! LaTeX Error: \begin{table} on input line 53 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
-[19
+ [22
 
 
 ]
@@ -913,31 +1073,27 @@ Package rerunfilecheck Info: File `Thesis.brf' has not changed.
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 53 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 8166 strings out of 492969
- 123948 string characters out of 3135849
- 245260 words of memory out of 3000000
- 11758 multiletter control sequences out of 15000+200000
+ 8180 strings out of 492969
+ 123116 string characters out of 3135849
+ 263449 words of memory out of 3000000
+ 11763 multiletter control sequences out of 15000+200000
  9517 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,11n,43p,1197b,403s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmti12.pfb>
-Output written on Thesis.pdf (24 pages, 191455 bytes).
+ 34i,12n,43p,1539b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
+pfb>
+Output written on Thesis.pdf (27 pages, 204986 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
