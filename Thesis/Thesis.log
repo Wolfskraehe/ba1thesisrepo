@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.20)  7 DEC 2018 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.19)  10 DEC 2018 19:12
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -30,7 +30,7 @@ File: switch.def 2018/11/13 3.27 Babel switching mechanism
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
@@ -58,14 +58,14 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip43
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\ifoddpage\ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 \c@checkoddpage=\count92
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\relsize\relsize.sty"
+(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip44
@@ -133,7 +133,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+) (C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip62
 \subfigcapskip=\skip63
@@ -149,7 +149,7 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
 \subfig@top=\skip66
 \subfig@bottom=\skip67
 )
@@ -158,7 +158,7 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -199,7 +199,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks20
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip68
@@ -212,7 +212,7 @@ s
 \f@nch@O@olf=\skip75
 \f@nch@O@orf=\skip76
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
+(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\latex\colortbl\colortbl.sty
 Package: colortbl 2018/05/02 v1.0c Color table columns (DPC)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
@@ -426,7 +426,7 @@ LaTeX Font Info:    ... okay on input line 84.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(C:\Users\Wolf\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count116
 \scratchdimen=\dimen128
@@ -753,8 +753,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 T
-      he score is measured as the summarized Euclidean distance of the prese...
+l.13 P
+      ercentage of optimal score is the difference to the best possible rout...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -764,7 +764,7 @@ or  <return>  to continue without it.
 
 
 
-]
+] [12]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -802,17 +802,17 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 50--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--62
-
- []
-
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 50--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--62
+
+ []
+
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 68--68
 []|\OT1/cmr/m/n/12 Best Per-
  []
@@ -942,7 +942,7 @@ Overfull \hbox (24.05997pt too wide) in paragraph at lines 93--114
 [][] 
  []
 
-[14]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 122--122
 []|\OT1/cmr/m/n/12 Average
  []
@@ -1002,12 +1002,12 @@ Overfull \hbox (43.01968pt too wide) in paragraph at lines 120--141
 [][] 
  []
 
-) [15] [16]
+) [16] [17]
 \openout2 = `chapter6.aux'.
 
  (chapter6.tex
 Chapter 6.
-) [17
+) [18
 
 
 
@@ -1016,7 +1016,7 @@ Chapter 6.
 
  (chapter7.tex
 Chapter 7.
-) [18
+) [19
 
 
 
@@ -1030,7 +1030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--23
 
  []
 
-[19
+[20
 
 
 
@@ -1038,13 +1038,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--23
 \tf@lof=\write4
 \openout4 = `Thesis.lof'.
 
- [20
+ [21
 
 ] (Thesis.lot)
 \tf@lot=\write5
 \openout5 = `Thesis.lot'.
 
-) [21
+) [22
 
 ] (Thesis.bbl (Thesis.brf)
 \tf@brf=\write6
@@ -1056,7 +1056,7 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
- [22
+ [23
 
 
 ]
@@ -1075,8 +1075,8 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 8180 strings out of 492969
- 123116 string characters out of 3135849
+ 8181 strings out of 492969
+ 124117 string characters out of 3135849
  263449 words of memory out of 3000000
  11763 multiletter control sequences out of 15000+200000
  9517 words of font info for 35 fonts, out of 3000000 for 9000
@@ -1091,9 +1091,9 @@ ublic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on Thesis.pdf (27 pages, 204986 bytes).
+Output written on Thesis.pdf (28 pages, 206203 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
