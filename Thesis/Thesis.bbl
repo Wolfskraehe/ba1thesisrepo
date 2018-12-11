@@ -1,3 +1,267 @@
-\begin{thebibliography}{}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\end{thebibliography}
+\datalist[entry]{anyt/global//global/global}
+  \entry{burke2013}{book}{}
+    \name{author}{2}{}{%
+      {{hash=BE}{%
+         family={Burke},
+         familyi={B\bibinitperiod},
+         given={E.K.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kendall},
+         familyi={K\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \strng{namehash}{BEKG1}
+    \strng{fullhash}{BEKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BK13}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{isbn}{9781461469407}
+    \field{series}{SpringerLink : B{\"u}cher}
+    \field{title}{Search Methodologies: Introductory Tutorials in Optimization
+  and Decision Support Techniques}
+    \verb{url}
+    \verb https://books.google.at/books?id=V-O5BAAAQBAJ
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{DEC02}{article}{}
+    \name{author}{2}{}{%
+      {{hash=dCLN}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Castro},
+         familyi={C\bibinitperiod},
+         given={L.\bibnamedelima N.},
+         giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=ZFJV}{%
+         family={Zuben},
+         familyi={Z\bibinitperiod},
+         given={F.\bibnamedelima J.\bibnamedelima Von},
+         giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  V\bibinitperiod},
+      }}%
+    }
+    \keyw{biocybernetics;evolutionary computation;learning (artificial
+  intelligence);optimisation;pattern recognition;combinatorial
+  mathematics;sensitivity analysis;software performance evaluation;adaptive
+  systems;clonal selection principle;machine learning;adaptive immune
+  response;antigenic stimulus;cell proliferation;antigen recognition;affinity
+  maturation process;computational implementation;CLONALG algorithm;pattern
+  recognition;multimodal optimization;combinatorial optimization;computational
+  cost;sensitivity analysis;user-defined parameters;evolutionary
+  algorithms;benchmark problems;performance evaluation;niching
+  method;multimodal function optimization;Immune system;Evolutionary
+  computation;Sensitivity analysis;Artificial immune systems;Adaptive
+  systems;Computational efficiency;Optimization methods;Pattern
+  recognition;Biology computing;Biological system modeling}
+    \strng{namehash}{CLNdZFJV1}
+    \strng{fullhash}{CLNdZFJV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{CZ02}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1109/TEVC.2002.1011539
+    \endverb
+    \field{issn}{1089-778X}
+    \field{number}{3}
+    \field{pages}{239\bibrangedash 251}
+    \field{title}{Learning and optimization using the clonal selection
+  principle}
+    \field{volume}{6}
+    \field{journaltitle}{IEEE Transactions on Evolutionary Computation}
+    \field{year}{2002}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{NAN08}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=NSJ}{%
+         family={Nanda},
+         familyi={N\bibinitperiod},
+         given={S.\bibnamedelima J.},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Panda},
+         familyi={P\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Majhi},
+         familyi={M\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Tha},
+         familyi={T\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{artificial immune systems;optimization algorithm;artificial immune
+  system;approximation algorithm;system modeling;plants
+  identification;controller design;fault detection;computer security;data sets
+  prediction;nonlinear functions approximation;nonlinear systems
+  identification;noisy environment;Artificial immune systems;Algorithm design
+  and analysis;Function approximation;Approximation algorithms;Application
+  software;Data engineering;Design engineering;Systems engineering and
+  theory;Modeling;Fault diagnosis;Artificial Immune Systems;Clonal Selection
+  Principle;Optimization}
+    \strng{namehash}{NSJ+1}
+    \strng{fullhash}{NSJPGMBTP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Nan+08}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{2008 International Conference on Information Technology}
+    \verb{doi}
+    \verb 10.1109/ICIT.2008.20
+    \endverb
+    \field{pages}{45\bibrangedash 48}
+    \field{title}{Development of a New Optimization Algorithm Based on
+  Artificial Immune System and Its Application}
+    \field{year}{2008}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{PAM17}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=PME}{%
+         family={Pamukov},
+         familyi={P\bibinitperiod},
+         given={M.\bibnamedelima E.},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \keyw{artificial immune systems;Internet of Things;security of data;unique
+  security requirements;artificial immune systems;IoT intrusion detection
+  systems;ubiquitous nature;high heterogeneity;connected devices;artificial
+  immune system;communication protocols;negative selection and danger
+  theory;Artificial intelligence;Detectors;Immune system;Intrusion
+  detection;Algorithm design and analysis;Protocols;IoT;Artificial Immune
+  System;Intrusion Detection Systems;Security;IDS}
+    \strng{namehash}{PME1}
+    \strng{fullhash}{PME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Pam17}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{2017 9th IEEE International Conference on Intelligent
+  Data Acquisition and Advanced Computing Systems: Technology and Applications
+  (IDAACS)}
+    \verb{doi}
+    \verb 10.1109/IDAACS.2017.8095144
+    \endverb
+    \field{pages}{564\bibrangedash 568}
+    \field{title}{Application of artificial immune systems for the creation of
+  IoT intrusion detection systems}
+    \field{volume}{1}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{RIFF09}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RMC}{%
+         family={Riff},
+         familyi={R\bibinitperiod},
+         given={M.\bibnamedelima C.},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Montero},
+         familyi={M\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \keyw{artificial immune systems;biocybernetics;calibration;genetic
+  algorithms;learning (artificial intelligence);travelling salesman
+  problems;dynamic adaptive calibration;CLONALG;bio-inspired
+  algorithms;parameter control strategy;immune algorithm;reinforcement learning
+  ideas;mutation process;adaptive technique;travelling salesman
+  problem;Calibration;Immune system;Programmable control;Adaptive
+  control;Cloning;Adaptive systems;Genetic mutations;Costs;Traveling salesman
+  problems;Testing;parameter control;artificial immune algorithms}
+    \strng{namehash}{RMCME1}
+    \strng{fullhash}{RMCME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{RM09}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{2009 International Conference on Adaptive and Intelligent
+  Systems}
+    \verb{doi}
+    \verb 10.1109/ICAIS.2009.38
+    \endverb
+    \field{pages}{187\bibrangedash 193}
+    \field{title}{A Dynamic Adaptive Calibration of the CLONALG Immune
+  Algorithm}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{tan2016artificial}{book}{}
+    \name{author}{1}{}{%
+      {{hash=TY}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{TY1}
+    \strng{fullhash}{TY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Tan16}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{isbn}{9781119076285}
+    \field{title}{Artificial Immune System: Applications in Computer Security}
+    \verb{url}
+    \verb https://books.google.at/books?id=uaEvCgAAQBAJ
+    \endverb
+    \field{year}{2016}
+  \endentry
+\enddatalist
+\endinput

@@ -4,11 +4,10 @@
 %
 %  Authors :  Keith Andrews, IICM, TU Graz, Austria
 %             Manuel Koschuch, FH Campus Wien, Austria
- %           Silvie Schmidt, FH Campus Wien, Austria
 % 
 %  Created :  22 Feb 96
 % 
-%  Changed :  24 March 2009; Oct.3rd, 2016
+%  Changed :  24 March 2009
 % 
 %----------------------------------------------------------------
 
@@ -25,15 +24,34 @@
 %\renewcommand{\rmdefault}{phv} % Arial
 %\renewcommand{\sfdefault}{phv} % Arial
 
-%\usepackage[latin1]{inputenc}   % so can use Umlaut chars  ä, ü
-\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}   % so can use Umlaut chars  ä, ü
+
+
 \usepackage{algorithm2e}
-\usepackage{algorithm}
+%\usepackage{algorithm}
+
+
 \usepackage[bf,sf]{subfigure}
 \renewcommand{\subfigtopskip}{0mm}
 \renewcommand{\subfigcapmargin}{0mm}
-\usepackage[utf8]{inputenc}
 
+\usepackage[english]{babel}         % load babel *before* natbi
+%\usepackage[austrian,english]{babel}         % load babel *before* natbi
+%\usepackage[square]{natbib}                  % citations
+
+\usepackage[
+backend=bibtex,
+style=alphabetic,
+]{biblatex}
+\addbibresource{thesis.bib}  % better than \bibliography
+
+\usepackage{mathtools}
+
+\usepackage{float}
+
+\usepackage[super]{nth}
+
+\usepackage{cases}
 
 \usepackage{url}
 
@@ -47,32 +65,33 @@
 
 \usepackage{colortbl} %define colored backgrounds for tables
 
-\ifpdf
-  \usepackage[pdftex]{graphicx}
-  \DeclareGraphicsExtensions{.pdf,.jpg,.png}
-  \pdfcompresslevel=9
-  \pdfpageheight=297mm
-  \pdfpagewidth=210mm
-  \usepackage[         % hyperref should be last package loaded
-    pdftex,
-    bookmarks,
-    bookmarksnumbered,
-    linktocpage,
-    pagebackref,
-    pdfview={Fit},
-    pdfstartview={Fit},
-    pdfpagemode=UseOutlines,                 % open bookmarks in Acrobat
-  ]{hyperref}
-  \usepackage{bookmark}
-\else                      % latex
-  \usepackage{graphicx}
-  \DeclareGraphicsExtensions{.ps}
-\fi
+\usepackage{listings} %listing for code
 
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.pdf,.jpg,.png}
+\pdfcompresslevel=9
+\pdfpageheight=297mm
+\pdfpagewidth=210mm
+\usepackage[         % hyperref should be last package loaded
+pdftex,
+bookmarks,
+bookmarksnumbered,
+linktocpage,
+%pagebackref,
+pdfview={Fit},
+pdfstartview={Fit},
+pdfpagemode=UseOutlines,                 % open bookmarks in Acrobat
+]{hyperref}
+\usepackage{bookmark}
+\else                      % latex
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.ps}
+\fi
 
 \geometry{a4paper,left=30mm,right=25mm, top=30mm, bottom=30mm}
 
-\setlength{\parskip}{3pt plus 1pt minus 0pt}       % vert. space before a paragraph
+\setlength{\parskip}{4pt plus 1pt minus 0pt}       % vert. space before a paragraph
 
 \setcounter{tocdepth}{1}        % lowest section level entered in ToC
 \setcounter{secnumdepth}{2}     % lowest section level still numbered
@@ -82,6 +101,7 @@
 
 
 \begin{document}
+
 
 \frontmatter
 \normalsize
@@ -139,16 +159,8 @@
 \appendix
 
 
-\include{appendix}          % Appendix A
+\include{contents/appendix}          % Appendix A
+\printbibliography
 
-\bibliographystyle{alpha}
-% List references I definitely want in the bibliography,
-% regardless of whether or not I cite them in the thesis.
-
-
-\newpage
-\phantomsection
-\addcontentsline{toc}{section}{Literaturverzeichnis}
-\bibliography{thesis.bib}
 \end{document}
 

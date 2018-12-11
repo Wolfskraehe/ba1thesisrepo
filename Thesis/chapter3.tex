@@ -1,13 +1,12 @@
 \chapter{Artificial Immune System}
 \label{chap:ais}
 \section{Basics of an AIS}
-A definition of an AIS is given by [TAN16]:
-"Artiﬁcial Immune System (AIS) is a computational intelligence system inspired by the working mechanism and principles of the biological immune system"
-An AIS can be used in machine learning and is comparable to an artificial neural net in terms of different application fields.
+A definition of an AIS is given by \cite{tan2016artificial}:
+"Artificial Immune System (AIS) is a computational intelligence system inspired by the working mechanism and principles of the biological immune system"\\An AIS can be used in machine learning and is comparable to an artificial neural net in terms of different application fields.
 It shares some similarities with genetic algorithms due to the cloning and mutation process in clonal selection.\\\\
-Generally speaking: a set of detectors (antibodies) react to a specific anomaly (antigen). This anomaly could be a malicious code, an IP address and port combination that is not allowed in the network or a pattern that has to be classified. What represents an antigen in the algorithm completely depends on the context and the use of the algorithm. An AIS can be used in an Intrusion Detection System [PAM17], learning and pattern recognition [DEC02], for recommender systems, data mining and clustering [BUR14] and optimization [NAN08].\\
+Generally speaking: a set of detectors (antibodies) react to a specific anomaly (antigen). This anomaly could be a malicious code, an IP address and port combination that is not allowed in the network or a pattern that has to be classified. What represents an antigen in the algorithm completely depends on the context and the use of the algorithm. An AIS can be used in an Intrusion Detection System \cite{PAM17}, learning and pattern recognition [DEC02], for recommender systems, data mining and clustering \cite{burke2013} and optimization \cite{NAN08}.\\
 
-The basic steps of an AIS can be summarized as [TAN16]:
+The basic steps of an AIS can be summarized as \cite{tan2016artificial}:
 \begin{enumerate}
 	\item 	Initialize/present antigen
 	\item 	Initialize antibody population
@@ -15,7 +14,8 @@ The basic steps of an AIS can be summarized as [TAN16]:
 	\item 	Check life cycle of each antibody and update it
 	\item 	If stopping condition met go to 6 else go to 3
 	\item 	Output antibody population
-\end{enumerate}\\\\Step 2 and Step 4 are the steps where negative selection and clonal selection will be relevant in most forms of AIS algorithms.\\\\
+\end{enumerate}
+Step 2 and Step 4 are the steps where negative selection and clonal selection will be relevant in most forms of AIS algorithms.\\\\
 At the time of writing there are mainly 5 concepts that are used in an AIS. The aforementioned negative selection, clonal selection and more recently the immune network theory, the danger theory and the dendritic cells theory. 
 
 \section{Negative Selection in AIS}
@@ -37,7 +37,7 @@ In case of recommender systems another way to measure the affinity is to use the
 Negative Selection is good for generating a population of detectors. To mimic the learning abilities of the biological immune system, the clonal selection principle can be used. The CLONALG algorithm was proposed by [DEC02] in 2002 and is the foundation of many AIS algorithms that use the clonal selection principle. The CLONALG is also present in more recent variations of the AIS like in aiNet and in algorithms the utilize the immune network theory [CITACION NEEDED]. This thesis will focus on the CLONALG algorithm and some of its variations, as these algorithms will be used to generate the data in Chapter \ref{chap:eva}.
 \subsection{CLONALG}
 The CLONALG algorithm mimics the clonal selection of the BIS on an abstract level. It will be applied mainly at step 4 in the basic AIS sequence in Chapter \ref{chap:ais}. The algorithm starts with generating a initial population C. It then calculates the affinity of the population to an antigen which is called the fitness. The n best antibodies of the population C will be chosen, determined by a fixed fitness value, and form the antibody set S. Every antibody in S will be cloned and represents our clone set P. Now the clone set will be mutated, every clone get randomly changed relatively to its affinity value. After the mutation the n best clones out of P are chosen. Then a new population will be generated and the process begins anew till a stopping condition is met.\\
-A simple pseudocode can look like this, based on [RIFF09]:
+A simple pseudocode can look like this, based on \cite{RIFF09}:
 \begin{algorithm}
 	Generate initial population C of A antibodies\\
 	Calculate Fitness(C)\\
@@ -49,10 +49,10 @@ A simple pseudocode can look like this, based on [RIFF09]:
 	C= C + New population A-n}
 	\caption{Simple CLONALG pseudo code}
 \end{algorithm}\\
-Usually the stopping condition is a given amount of evaluation where no increase in fitness is achieved or felt below a given threshold. The initial CLONALG algorithm as proposed by [DEC02] operates with static parameters and don't adjust anything besides the mutation. Different parameters are needed for different applications fields as was also stated in [DEC02]. This parameters must be changed beforehand and can't adapt dynamically during the runtime of the algorithm.\\\\
-Although the algorithm is very simple and efficient in solving different tasks like multimodal problems or pattern recognition, drawbacks do exist [GARRET04]. Choosing how many member should be cloned is difficult. The lack of adaptive parameters can lead to inefficiency because of bad scalability and too many evaluations which could have been avoided [Garret04].
+Usually the stopping condition is a given amount of evaluation where no increase in fitness is achieved or felt below a given threshold. The initial CLONALG algorithm as proposed by \cite{DEC02} operates with static parameters and don't adjust anything besides the mutation. Different parameters are needed for different applications fields as was also stated in \cite{DEC02}. This parameters must be changed beforehand and can't adapt dynamically during the runtime of the algorithm.\\\\
+Although the algorithm is very simple and efficient in solving different tasks like multimodal problems or pattern recognition, drawbacks do exist [GARRET04]. Choosing how many member should be cloned is difficult. The lack of adaptive parameters can lead to inefficiency because of bad scalability and too many evaluations which could have been avoided [GARRET04].
 \subsection{Adaptive CLONALG variants}
-To make the algorithm more efficient and adaptive, some variants where proposed. There are different parameter control strategies for the CLONALG algorithm. One of these variants is proposed by [RIFF09]. It is based on the idea of reinforcement learning. The antibody sets will be either rewarded for a high affinity or penalized for a low one. This will be achieved through population control. The reward is the increase in antibody population for a given set and the penalty is the decrease in population [RIFF09]. The mutation factor is governed by the population size. This adaptive technique allows the algorithm to adjust the core parameters during runtime and makes it more efficient in problem solving and hardware usage as shown in [RIFF09].\\
+To make the algorithm more efficient and adaptive, some variants where proposed. There are different parameter control strategies for the CLONALG algorithm. One of these variants is proposed by \cite{RIFF09}. It is based on the idea of reinforcement learning. The antibody sets will be either rewarded for a high affinity or penalized for a low one. This will be achieved through population control. The reward is the increase in antibody population for a given set and the penalty is the decrease in population \cite{RIFF09}. The mutation factor is governed by the population size. This adaptive technique allows the algorithm to adjust the core parameters during runtime and makes it more efficient in problem solving and hardware usage as shown in \cite{RIFF09}.\\
 Another method is proposed by [Garret04]. Some techniques from the evolutionary algorithms will be applied to the CLONALG in this approach. An algorithm based on this idea will be evaluated in chapter \ref{chap:eva}.
  
 
