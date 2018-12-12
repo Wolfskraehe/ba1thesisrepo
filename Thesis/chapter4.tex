@@ -1,14 +1,14 @@
 \chapter{Traveling Salesman Problem}
 \label{chap:tsp}
 \section{Background}
-One of the first publications of the traveling salesman problem was by the mathematician Karl Menger in the 1920's [Applegate 1991]. The problem itself was discussed earlier by Sir William Rowam Hamilton and Kirkman [Matai 2010]. It describes a graph with a certain amount of nodes with known distances between the nodes. The goal is to find a route where every node is visited exactly one time and the route ends at the node where it started. The route should be the shortest possible.((example picture of an tsp))\\\\
-The algorithmic complexity for a symmetric graph with n nodes is: $\frac{n(n-1)}{2}$ [Applegate 1991].
+One of the first publications of the traveling salesman problem was by the mathematician Karl Menger in the 1920's \cite{Applegate}. The problem itself was discussed earlier by Sir William Rowam Hamilton and Kirkman \cite{Matai10}. It describes a graph with a certain amount of nodes with known distances between the nodes. The goal is to find a route where every node is visited exactly one time and the route ends at the node where it started. The route should be the shortest possible.((example picture of an tsp))\\\\
+The algorithmic complexity for a symmetric graph with n nodes is: $\frac{n(n-1)}{2}$ \cite{Applegate}.
 The graph is symmetric if the distance between two nodes n and m is the same as the distance between m and n. Asymetric traveling salesman problems also exist with a higher complexity of $n(n-1)$\\
 The complexity of the problem is categorized as non-deterministic polynomial hard (NP-Hard). The runtime of an algorithm can scale exponentially with the number of nodes in the graph. No algorithm is able to solve the problem in polynomial time.\\
 Current algorithms work with heuristics to solve the TSP.\\\\
-The TSP is common in many real world applications. Drilling of printed circuit boards, computer wiring, order picking in warehouses, vehicle routing and DNA sequencing are some fields where the TSP is present [Matai 2010].
+The TSP is common in many real world applications. Drilling of printed circuit boards, computer wiring, order picking in warehouses, vehicle routing and DNA sequencing are some fields where the TSP is present \cite{Matai10}.
 \section{Mathematical definition}
-The symmetric graph is defined as $G=(V,E)$ where $V=\{1,..,n\}$ are the vertex or the nodes and $E=\{(i,j):i,j\in V, i<j\}$ are the edges or routes. Additionally there is an arc set $A={i,j):i,jin V, ineqj}$ which defines all routes in the graph, no route can be used twice. A cost matrix is defined on the edge or the arc set. Usually the cost matrix is calculated using the Euclidean distance. [Matai 2010].\\\\
+The symmetric graph is defined as $G=(V,E)$ where $V=\{1,..,n\}$ are the vertex or the nodes and $E=\{(i,j):i,j\in V, i<j\}$ are the edges or routes. Additionally there is an arc set $A=\{i,j):i,j\in V, i\neq j\}$ which defines all routes in the graph, no route can be used twice. A cost matrix is defined on the edge or the arc set. Usually the cost matrix is calculated using the Euclidean distance \cite{Matai10}.\\\\
 A typical TSP consists of a set of cities (V), distances between the cities (E) and the cost measured in the euclidean distance between the cities (C). All TSP used in this thesis will follow this convention. 
 
 

@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
+% $ biblatex bbl format version 3.0 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -17,6 +17,52 @@
 \endgroup
 
 \datalist[entry]{anyt/global//global/global}
+  \entry{Applegate}{book}{}
+    \name{author}{4}{}{%
+      {{hash=ADL}{%
+         family={Applegate},
+         familyi={A\bibinitperiod},
+         given={David\bibnamedelima L.},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=BRE}{%
+         family={Bixby},
+         familyi={B\bibinitperiod},
+         given={Robert\bibnamedelima E.},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=CV}{%
+         family={Chvatal},
+         familyi={C\bibinitperiod},
+         given={Vasek},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CWJ}{%
+         family={Cook},
+         familyi={C\bibinitperiod},
+         given={William\bibnamedelima J.},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Princeton University Press}%
+    }
+    \strng{namehash}{ADL+1}
+    \strng{fullhash}{ADLBRECVCWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{App+07}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{isbn}{0691129932, 9780691129938}
+    \field{title}{The Traveling Salesman Problem: A Computational Study
+  (Princeton Series in Applied Mathematics)}
+    \list{location}{1}{%
+      {Princeton, NJ, USA}%
+    }
+    \field{year}{2007}
+  \endentry
+
   \entry{burke2013}{book}{}
     \name{author}{2}{}{%
       {{hash=BE}{%
@@ -102,6 +148,61 @@
     \field{journaltitle}{IEEE Transactions on Evolutionary Computation}
     \field{year}{2002}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Matai10}{incollection}{}
+    \name{author}{3}{}{%
+      {{hash=MR}{%
+         family={Matai},
+         familyi={M\bibinitperiod},
+         given={Rajesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Surya},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MML}{%
+         family={Mittal},
+         familyi={M\bibinitperiod},
+         given={Murari\bibnamedelima Lal},
+         giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=DD}{%
+         family={Davendra},
+         familyi={D\bibinitperiod},
+         given={Donald},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IntechOpen}%
+    }
+    \strng{namehash}{MRSSMML1}
+    \strng{fullhash}{MRSSMML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{MSM10}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Traveling Salesman Problem}
+    \field{chapter}{1}
+    \verb{doi}
+    \verb 10.5772/12909
+    \endverb
+    \field{title}{Traveling Salesman Problem: an Overview of Applications,
+  Formulations, and Solution Approaches}
+    \verb{url}
+    \verb https://doi.org/10.5772/12909
+    \endverb
+    \list{location}{1}{%
+      {Rijeka}%
+    }
+    \field{year}{2010}
   \endentry
 
   \entry{NAN08}{inproceedings}{}
@@ -195,6 +296,27 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{tsplib}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RG}{%
+         family={Reinelt},
+         familyi={R\bibinitperiod},
+         given={Gerhard},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RG1}
+    \strng{fullhash}{RG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Rei}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+  \field{note}{\url{https://www.iwr.uni-heidelberg.de/groups/comopt/software/TSPLIB95/}[Accessed:
+  12.12.2018]}
+    \field{title}{TSPLIB95}
+  \endentry
+
   \entry{RIFF09}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=RMC}{%
@@ -234,6 +356,61 @@
     \field{title}{A Dynamic Adaptive Calibration of the CLONALG Immune
   Algorithm}
     \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{sun}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=SW}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={W.\bibnamedelima .},
+         giveni={W\bibinitperiod\bibinitdelim \bibinitperiod},
+      }}%
+      {{hash=XX}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={X.\bibnamedelima .},
+         giveni={X\bibinitperiod\bibinitdelim \bibinitperiod},
+      }}%
+      {{hash=DH}{%
+         family={Dai},
+         familyi={D\bibinitperiod},
+         given={H.\bibnamedelima .},
+         giveni={H\bibinitperiod\bibinitdelim \bibinitperiod},
+      }}%
+      {{hash=TZ}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=TH}{%
+         family={Tamura},
+         familyi={T\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{travelling salesman problems;genetic algorithms;biology;combinatorial
+  optimization algorithm;immune response mechanism;traveling salesman
+  problem;TSP;TSPLIB benchmark problems;immune network;artificial immune
+  system;Immune system;Cells (biology);Traveling salesman
+  problems;Computational modeling;Algorithm design and
+  analysis;Production;Sun;Benchmark testing;Artificial immune
+  systems;Recruitment}
+    \strng{namehash}{SW+1}
+    \strng{fullhash}{SWXXDHTZTH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Sun+04}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{SICE 2004 Annual Conference}
+    \field{pages}{710\bibrangedash 715 vol. 1}
+    \field{title}{An immune optimization algorithm for TSP problem}
+    \field{volume}{1}
+    \field{year}{2004}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
