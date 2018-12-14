@@ -150,6 +150,40 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Garret04}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=GSM}{%
+         family={Garrett},
+         familyi={G\bibinitperiod},
+         given={S.\bibnamedelima M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{optimisation;adaptive systems;artificial life;evolutionary
+  computation;parameter-free clonal selection;adaptive clonal
+  selection;optimization;immune system adaptation;binary
+  representation;mutation;clones;Immune system;Cloning;Response surface
+  methodology;Genetic mutations;Computational biology;Computer
+  science;Bioinformatics;Psychology;Educational institutions;Pathogens}
+    \strng{namehash}{GSM1}
+    \strng{fullhash}{GSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Gar04}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{Proceedings of the 2004 Congress on Evolutionary
+  Computation (IEEE Cat. No.04TH8753)}
+    \verb{doi}
+    \verb 10.1109/CEC.2004.1330978
+    \endverb
+    \field{pages}{1052\bibrangedash 1058 Vol.1}
+    \field{title}{Parameter-free, adaptive clonal selection}
+    \field{volume}{1}
+    \field{year}{2004}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Matai10}{incollection}{}
     \name{author}{3}{}{%
       {{hash=MR}{%
@@ -293,6 +327,49 @@
   IoT intrusion detection systems}
     \field{volume}{1}
     \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Pasti06}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=PR}{%
+         family={Pasti},
+         familyi={P\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=dCLN}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Castro},
+         familyi={C\bibinitperiod},
+         given={L.\bibnamedelima Nunes},
+         giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \keyw{neural nets;travelling salesman problems;neuro-immune
+  network;traveling salesman problem;combinatorial optimization;NP class
+  problem;meta-heuristics;neural network;Traveling salesman problems;Cities and
+  towns;Neural networks;Optimization methods;Immune system;Benchmark
+  testing;Annealing;Intelligent systems;Cost function;Artificial neural
+  networks}
+    \strng{namehash}{PRCLNd1}
+    \strng{fullhash}{PRCLNd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{PC06}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{The 2006 IEEE International Joint Conference on Neural
+  Network Proceedings}
+    \verb{doi}
+    \verb 10.1109/IJCNN.2006.247394
+    \endverb
+    \field{issn}{2161-4393}
+    \field{pages}{3760\bibrangedash 3766}
+    \field{title}{A Neuro-Immune Network for Solving the Traveling Salesman
+  Problem}
+    \field{year}{2006}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
