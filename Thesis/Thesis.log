@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.20)  18 DEC 2018 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.20)  19 DEC 2018 18:55
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1053,6 +1053,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--26
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--46
+
+ []
+
 [12]
 Underfull \hbox (badness 10000) in paragraph at lines 49--61
 
@@ -1064,7 +1069,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--61
  []
 
 [13]
-<Images/CLONALG_Fig_Avg.png, id=213, 361.35pt x 216.05719pt>
+<Images/CLONALG_Fig_Avg.png, id=215, 361.35pt x 216.05719pt>
 File: Images/CLONALG_Fig_Avg.png Graphic file (type png)
 <use Images/CLONALG_Fig_Avg.png>
 Package pdftex.def Info: Images/CLONALG_Fig_Avg.png  used on input line 64.
@@ -1200,12 +1205,12 @@ Overfull \hbox (24.05997pt too wide) in paragraph at lines 96--117
  []
 
 [15]
-<Images/ESPC_Fig_Avg.png, id=227, 363.60844pt x 217.5628pt>
+<Images/ESPC_Fig_Avg.png, id=229, 363.60844pt x 217.5628pt>
 File: Images/ESPC_Fig_Avg.png Graphic file (type png)
 <use Images/ESPC_Fig_Avg.png>
 Package pdftex.def Info: Images/ESPC_Fig_Avg.png  used on input line 123.
 (pdftex.def)             Requested size: 363.60754pt x 217.56227pt.
-<Images/ESPC_Fig_Best.png, id=228, 363.60844pt x 216.81pt>
+<Images/ESPC_Fig_Best.png, id=230, 363.60844pt x 216.81pt>
 File: Images/ESPC_Fig_Best.png Graphic file (type png)
 <use Images/ESPC_Fig_Best.png>
 Package pdftex.def Info: Images/ESPC_Fig_Best.png  used on input line 128.
@@ -1214,7 +1219,7 @@ Package pdftex.def Info: Images/ESPC_Fig_Best.png  used on input line 128.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Images/ESPC_Fig_Greedy.png, id=229, 363.60844pt x 218.31563pt>
+<Images/ESPC_Fig_Greedy.png, id=231, 363.60844pt x 218.31563pt>
 File: Images/ESPC_Fig_Greedy.png Graphic file (type png)
 <use Images/ESPC_Fig_Greedy.png>
 Package pdftex.def Info: Images/ESPC_Fig_Greedy.png  used on input line 133.
@@ -1326,13 +1331,13 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17087 strings out of 492969
- 285127 string characters out of 3135849
- 619964 words of memory out of 3000000
- 20549 multiletter control sequences out of 15000+200000
+ 17090 strings out of 492969
+ 285218 string characters out of 3135849
+ 620451 words of memory out of 3000000
+ 20551 multiletter control sequences out of 15000+200000
  11433 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,45p,1640b,1887s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,12n,45p,1644b,1887s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
@@ -1346,9 +1351,9 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (27 pages, 288144 bytes).
+Output written on Thesis.pdf (27 pages, 289274 bytes).
 PDF statistics:
- 412 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
+ 414 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

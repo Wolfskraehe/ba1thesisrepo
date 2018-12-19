@@ -63,6 +63,42 @@
     \field{year}{2007}
   \endentry
 
+  \entry{howard}{book}{}
+    \name{author}{2}{}{%
+      {{hash=AH}{%
+         family={Anton},
+         familyi={A\bibinitperiod},
+         given={Howard},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Rorres},
+         familyi={R\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {New York : Wiley}%
+    }
+    \strng{namehash}{AHRC1}
+    \strng{fullhash}{AHRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{AR94}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{edition}{7th ed}
+    \field{isbn}{0471587419 (acid-free)}
+    \field{note}{Includes index}
+    \field{title}{Elementary linear algebra : applications version}
+    \field{type}{Book; Book/Illustrated}
+    \field{year}{1994}
+  \endentry
+
   \entry{burke2013}{book}{}
     \name{author}{2}{}{%
       {{hash=BE}{%
