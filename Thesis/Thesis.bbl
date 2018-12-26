@@ -128,9 +128,6 @@
     \field{series}{SpringerLink : B{\"u}cher}
     \field{title}{Search Methodologies: Introductory Tutorials in Optimization
   and Decision Support Techniques}
-    \verb{url}
-    \verb https://books.google.at/books?id=V-O5BAAAQBAJ
-    \endverb
     \field{year}{2013}
   \endentry
 
@@ -153,6 +150,46 @@
     \field{note}{\url{http://optalgtoolkit.sourceforge.net/}[Accessed:
   18.12.2018]}
     \field{title}{Optimization Algorithm Toolkit}
+  \endentry
+
+  \entry{evolution}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BHG}{%
+         family={Beyer},
+         familyi={B\bibinitperiod},
+         given={Hans-Georg},
+         giveni={H\bibinithyphendelim G\bibinitperiod},
+      }}%
+      {{hash=SHP}{%
+         family={Schwefel},
+         familyi={S\bibinitperiod},
+         given={Hans-Paul},
+         giveni={H\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Kluwer Academic Publishers}%
+    }
+    \keyw{Darwinian evolution, computational intelligence, design principles
+  for genetic operators, evolution strategies, evolutionary computation,
+  optimization}
+    \strng{namehash}{BHGSHP1}
+    \strng{fullhash}{BHGSHP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BS02}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{issn}{1567-7818}
+    \field{number}{1}
+    \field{pages}{3\bibrangedash 52}
+    \field{title}{Evolution Strategies \&Ndash;A Comprehensive Introduction}
+    \field{volume}{1}
+    \list{location}{1}{%
+      {Hingham, MA, USA}%
+    }
+    \field{month}{05}
+    \field{year}{2002}
   \endentry
 
   \entry{DEC02}{article}{}
@@ -241,6 +278,31 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{immunebio}{book}{}
+    \name{author}{1}{}{%
+      {{hash=JC}{%
+         family={Janeway},
+         familyi={J\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Garland Pub.}%
+    }
+    \strng{namehash}{JC1}
+    \strng{fullhash}{JC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Jan01}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{isbn}{9780815336426}
+    \field{series}{Immunobiology 5 : the Immune System in Health and Disease}
+    \field{title}{Immunobiology Five}
+    \field{year}{2001}
+  \endentry
+
   \entry{Matai10}{incollection}{}
     \name{author}{3}{}{%
       {{hash=MR}{%
@@ -287,9 +349,6 @@
     \endverb
     \field{title}{Traveling Salesman Problem: an Overview of Applications,
   Formulations, and Solution Approaches}
-    \verb{url}
-    \verb https://doi.org/10.5772/12909
-    \endverb
     \list{location}{1}{%
       {Rijeka}%
     }
@@ -376,9 +435,6 @@
     \field{booktitle}{2017 9th IEEE International Conference on Intelligent
   Data Acquisition and Advanced Computing Systems: Technology and Applications
   (IDAACS)}
-    \verb{doi}
-    \verb 10.1109/IDAACS.2017.8095144
-    \endverb
     \field{pages}{564\bibrangedash 568}
     \field{title}{Application of artificial immune systems for the creation of
   IoT intrusion detection systems}
@@ -428,6 +484,37 @@
   Problem}
     \field{year}{2006}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{pearson}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PK}{%
+         family={Pearson},
+         familyi={P\bibinitperiod},
+         given={Karl},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Galton},
+         familyi={G\bibinitperiod},
+         given={Francis},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PKGF1}
+    \strng{fullhash}{PKGF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{PG95}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{347-352}
+    \field{pages}{240\bibrangedash 242}
+    \field{title}{VII. Note on regression and inheritance in the case of two
+  parents}
+    \field{volume}{58}
+    \field{journaltitle}{Proceedings of the Royal Society of London}
+    \field{year}{1895}
   \endentry
 
   \entry{tsplib}{misc}{}
@@ -491,6 +578,31 @@
   Algorithm}
     \field{year}{2009}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{hammington}{book}{}
+    \name{author}{1}{}{%
+      {{hash=RD}{%
+         family={Robinson},
+         familyi={R\bibinitperiod},
+         given={D.J.S.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {De Gruyter}%
+    }
+    \strng{namehash}{RD1}
+    \strng{fullhash}{RD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Rob08}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{isbn}{9783110198164}
+    \field{series}{De Gruyter Textbook}
+    \field{title}{An Introduction to Abstract Algebra}
+    \field{year}{2008}
   \endentry
 
   \entry{sun}{inproceedings}{}
@@ -569,9 +681,6 @@
     \field{sortinithash}{T}
     \field{isbn}{9781119076285}
     \field{title}{Artificial Immune System: Applications in Computer Security}
-    \verb{url}
-    \verb https://books.google.at/books?id=uaEvCgAAQBAJ
-    \endverb
     \field{year}{2016}
   \endentry
 \enddatalist

@@ -15,11 +15,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Negative Selection in AIS}{6}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Clonal Selection in an AIS}{6}{section.3.3}
+\contentsline {section}{\numberline {3.3}Clonal Selection in an AIS}{7}{section.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}CLONALG}{7}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Adaptive CLONALG variants}{7}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Adaptive CLONALG variants}{8}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Traveling Salesman Problem}{9}{chapter.4}
 \defcounter {refsection}{0}\relax 
@@ -43,4 +43,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Related work}{19}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusio}{20}{chapter.7}
+\contentsline {chapter}{\numberline {7}Conclusion}{20}{chapter.7}
