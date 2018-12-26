@@ -41,6 +41,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.3}CLONALG ESPC}{16}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Related work}{19}{chapter.6}
+\contentsline {section}{\numberline {5.3}Time as stopping criteria}{19}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{20}{chapter.7}
+\contentsline {chapter}{\numberline {6}Related work}{21}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusion}{22}{chapter.7}
