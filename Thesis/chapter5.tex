@@ -161,7 +161,7 @@ The variant with an adaptive selection size shows only a insignificant worse per
 	\caption{ESPC performance}
 	\label{tab:espc}
 \end{table}
-\newpage
+When looking at the average Percentage the algorithms deviate from the best solution, the Greedy algorithm outclasses the CLONALG variants. The average percentage for the Greedy is 63.7, the untuned CLONALG achieves 566.6, the tuned CLONALG 693.1 and the ESPC 570.2. These values on their own are not suited to judge the performance of the algorithm because of the wide range in difficulty of the TSP, but the difference compared to the Greedy algorithm is very high. The Greedy algorithm needed about 52 minutes to complete the whole test run, while the CLONALG variants needed about 19 minutes.
 \section{Time as stopping criteria}
 To test if a fixed amount of runtime yields different results than the no improvements criteria, the algorithms will be applied to another test run. In this run every algorithm only runs once on every TSP. The stopping criteria are now 25 seconds.\\
 The CLONALG has an average MAE for all TSP of -0.328 compared to the Greedy algorithm. This is better than with the 10000 iterations without improvement criteria, where this MAE was -0.546. This time the CLONALG achieved a better score on the TSP berlin52, ulysses22, st70, eil51 and eil76 as shown in figure\ref{CLONALG_Time}. The performance for the CLONALG was better with this stopping criteria.
@@ -170,6 +170,7 @@ The CLONALG has an average MAE for all TSP of -0.328 compared to the Greedy algo
 	\caption{MAE on Best Score for CLONALG compared to Greedy with the 25 seconds stopping criteria}
 	\label{CLONALG_Time}
 \end{figure}
+The tuned CLONALG algorithm still performs worse than the untuned, but can achieve a better score for ulysses22, berlin52 and eil51 than the greedy algorithm. It was also able to find a better route for ulysses22 compared to the tuned and the ESPC variant which was not possible in the previous evaluation.\\
 The ESPC has an average MAE for all TSP of 0.110 compared to the CLONALG and achieves a better score on all TSP except berlin52, st70, eil51, and eil76 shown in table \ref{ESPC_Time}. The ESPC has also a better performance when running fo 25 seconds compared to the no improvements criteria.
 \begin{figure}[H]
 	\includegraphics[]{Images/ESPC_Time.png}
@@ -181,5 +182,7 @@ The average MAE compared to the Greedy algorithm is -0.270 which is better compa
 	\includegraphics[]{Images/ESPC_Greedy_Time.png}
 	\caption{MAE on Best Score for ESPC compared to Greedy with the 25 seconds stopping criteria}
 	\label{ESPC_GREEDY_TIME}
-\end{figure} 
+\end{figure}
+\newpage
+The average percentage deviation from the best score got better for all algorithms but to a different degree. The Greedy algorithm now deviates 54.2, the untuned CLONALG 447.2, the tuned CLONALG 529.6 and the ESPC 410.9 percent. The deviation for the CLONALG variants became more than 100 percent better but remains still very high compared to the Greedy algorithm. This values highlight that the CLONALG variants profit more from a longer runtime in solving the TSP than the Greedy algorithm. 
  

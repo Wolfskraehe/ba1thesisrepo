@@ -43,6 +43,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Time as stopping criteria}{19}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Related work}{21}{chapter.6}
+\contentsline {chapter}{\numberline {6}Related work}{22}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{22}{chapter.7}
+\contentsline {chapter}{\numberline {7}Conclusion}{23}{chapter.7}
