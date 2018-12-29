@@ -184,5 +184,10 @@ The average MAE compared to the Greedy algorithm is -0.270 which is better compa
 	\label{ESPC_GREEDY_TIME}
 \end{figure}
 \newpage
-The average percentage deviation from the best score got better for all algorithms but to a different degree. The Greedy algorithm now deviates 54.2, the untuned CLONALG 447.2, the tuned CLONALG 529.6 and the ESPC 410.9 percent. The deviation for the CLONALG variants became more than 100 percent better but remains still very high compared to the Greedy algorithm. This values highlight that the CLONALG variants profit more from a longer runtime in solving the TSP than the Greedy algorithm. 
+The average percentage deviation from the best score got better for all algorithms but to a different degree. The Greedy algorithm now deviates 54.2, the untuned CLONALG 447.2, the tuned CLONALG 529.6 and the ESPC 410.9 percent. This values highlight that the CLONALG variants profit more from a longer runtime in solving the TSP than the Greedy algorithm. The deviation for the CLONALG variants became more than 100 percent better but remains still very high compared to the Greedy algorithm. This is best seen on the largest TSP pr2392 where all clonal algorithms had a deviation from optimal score of more than 3000 percent. The Greedy algorithm has an exceptional performance on pr2392 with only over 1 percent of deviation from optimal score, however this TSP is highly structured and organized. The nearest-neighbour technique of this algorithm is perfectly suited for solving this TSP but is less efficient at less structered and more random TSP. The clonal algorithms do not benefit from any kind of order, symmetry or structure in the TSP, but they are also not negatively affected by the lack of thereof. 
+\begin{figure}[H]
+	\includegraphics[width=10cm, height=15cm]{Images/pr2392.jpg}
+	\caption{pr2392 the largest TSP in the setup}
+	\label{pr2392}
+\end{figure}
  
