@@ -46,3 +46,5 @@
 \contentsline {chapter}{\numberline {6}Related work}{22}{chapter.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Conclusion}{23}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Future work}{24}{section.7.1}
