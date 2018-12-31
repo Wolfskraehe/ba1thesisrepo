@@ -13,19 +13,19 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces MAE on Average Score for CLONALG compared to Greedy}}{14}{figure.5.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces MAE on Average Score for CLONALG compared to greedy}}{14}{figure.5.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces MAE on Average Score for ESPC compared to CLONALG}}{17}{figure.5.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.3}{\ignorespaces MAE on Best Score for ESPC compared to CLONALG}}{17}{figure.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces MAE on Best Score for ESPC compared to Greedy}}{18}{figure.5.4}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces MAE on Best Score for ESPC compared to greedy}}{18}{figure.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces MAE on Best Score for CLONALG compared to Greedy with the 25 seconds stopping criteria}}{19}{figure.5.5}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces MAE on Best Score for CLONALG compared to greedy with the 25 seconds stopping criteria}}{19}{figure.5.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.6}{\ignorespaces MAE on Best Score for ESPC compared to CLONALG with the 25 seconds stopping criteria}}{20}{figure.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces MAE on Best Score for ESPC compared to Greedy with the 25 seconds stopping criteria}}{20}{figure.5.7}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces MAE on Best Score for ESPC compared to greedy with the 25 seconds stopping criteria}}{20}{figure.5.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.8}{\ignorespaces pr2392 the largest TSP in the setup}}{21}{figure.5.8}
 \defcounter {refsection}{0}\relax 
