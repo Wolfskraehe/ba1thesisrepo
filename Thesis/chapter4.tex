@@ -4,7 +4,7 @@
 One of the first publications on the traveling salesman problem(TSP) was written the mathematician Karl Menger in the 1920's \cite{Applegate}, although the problem itself has been discussed earlier by Sir William Rowam Hamilton and Kirkman \cite{Matai10}. It describes a graph with a certain amount of nodes and known distances between the nodes. The goal is to find a route where every node is visited exactly once and the route ends at the starting node. The route should be the shortest possible.
 \begin{figure}[H]
 	\includegraphics[]{Images/berlin52.png}
-	\caption{A solved TSP berlin52}
+	\caption{A solved TSP berlin52 (source: OAT)}
 	\label{berlin52}
 \end{figure}
 \newpage
@@ -15,7 +15,8 @@ Current algorithms work with heuristics to solve the TSP.\\\\
 The TSP is common in many real world applications. Drilling of printed circuit boards, computer wiring, order picking in warehouses, vehicle routing and DNA sequencing are some examples \cite{Matai10}.
 \section{Mathematical definition}
 The symmetric graph is defined as $G=(V,E)$ where $V=\{1,..,n\}$ are the vertices or the nodes and $E=\{(i,j):i,j\in V, i<j\}$ are the edges or routes. Additionally, there is an arc set $A=\{i,j):i,j\in V, i\neq j\}$ which defines all routes in the graph, no route can be used twice. A cost matrix is defined on the edges of the arc set. Usually the cost matrix is calculated using Euclidean distance \cite{Matai10}.\\\\
-A typical TSP consists of a set of cities (V), distances between the cities (E) and the cost measured in Euclidean distance between the cities (C). All TSP used in this thesis will follow this convention. 
+A typical TSP consists of a set of cities (V), distances between the cities (E) and the cost measured in Euclidean distance between the cities (C). All TSP used in this thesis will follow this convention.\\
+ The next chapter describes the evaluation of the different algorithms and the changes made to them to examine their performance for solving the TSP.
 
 
  

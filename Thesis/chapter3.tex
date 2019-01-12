@@ -23,9 +23,9 @@ At the time of writing 5 main concepts are used in an AIS. The aforementioned ne
 A typical AIS has a set of detectors which react to any non-self data in the system. The most common way to generate these detectors is to create them randomly and let them undergo a negative selection in which they are presented to self data sets. If one of the detectors recognizes a self data, the affinity is therefore high enough, it is destroyed. In this case the AIS follows the process that is found in the BIS.\\\\ 
 It is important to decide in which way affinity is measured and which conditions trigger an immune reaction. If the used data consists of numerical values, or is easily converted into a vector thereof, the Euclidean distance \cite{howard} is commonly used as a mean to measure affinity [TAN16]:\\\\
 \begin{math}
-\sqrt{\sum_{i=1}^{n}(xi-yi)^2}
+\sqrt{\sum_{i=1}^{n}(x_{i}-y_{i})^2}
 \end{math}\\\\
-The Euclidean distance measures the straight-line distance between two points in Euclidean space. In the formula above xi and yi are values of two n-dimensional vectors x and y \cite{howard}.  
+The Euclidean distance measures the straight-line distance between two points in Euclidean space. In the formula above \begin{math}x_{i}\end{math} and \begin{math}y_{i}\end{math} are values of two n-dimensional vectors x and y \cite{howard}.  
 
 Another way of measuring the affinity is the use of different variants of the Hammington distance. The Hammington distance is the number of bits which must be changed in two bit strings of the same length to make both strings identical \cite{hammington}. In an binary string the distance can be measured by the number of ones after applying a XOR operation on both strings. A common variant of this is the use of the so called r-continuous bits. In this case a detector recognizes an element if r-continuous bits are identical with the element.\\
 \begin{table*}[htbp]
@@ -57,7 +57,8 @@ The main parameters of the CLONALG are population size, selection size, clone fa
 Although the algorithm is simple and efficient in solving different tasks like multimodal problems or pattern recognition, drawbacks do exist \cite{Garret04}. Choosing how many members should be cloned is difficult. The lack of adaptive parameters can lead to inefficiency caused by bad scalability and too many evaluations \cite{Garret04}.
 \subsection{Adaptive CLONALG variants}
 To make the algorithm more efficient and adaptive, some variants have been proposed. There are different parameter control strategies for the CLONALG algorithm. One of these variants is proposed by \cite{RIFF09} and is based on the concept of reinforcement learning. Ab sets are either rewarded for high affinity or penalized for a low one. This is achieved through population control. The reward consists of an increase in Ab population for a given set and the penalty is the decrease in population \cite{RIFF09}. The mutation factor is governed by population size, allowing the algorithm to adjust the core parameters during runtime and making it more efficient in problem solving and hardware usage \cite{RIFF09}.\\
-Another method is proposed by \cite{Garret04} where some techniques of evolutionary algorithms are applied to the CLONALG. An algorithm based on this concept will be evaluated in chapter \ref{chap:eva}.
+Another method is proposed by \cite{Garret04} where some techniques of evolutionary algorithms are applied to the CLONALG. An algorithm based on this concept will be evaluated in chapter \ref{chap:eva}.\\
+In this part the basics of an AIS were discussed, the next chapter will highlight the traveling salesman problem and its definition.
  
 
 
