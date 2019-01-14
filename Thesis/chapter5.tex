@@ -47,7 +47,7 @@ The adaptive CLONALG variation is based on \cite{Garret04} and uses a concept fr
 	\caption{CLONALG variant with dynamic selection size}
 	\label{algo2}
 \end{algorithm}
-\section{Results}
+\section{Results: Improvement Limitation}
 \subsection{CLONALG untuned}
 The algorithms are run 100 times on every TSP. The stopping criteria are defined as no improvements after 10000 iterations of the algorithm. This number is chosen to give the algorithm enough time without restricting it to a specific amount of seconds. The CPU usage spiked around 58\% with an average around 30\% for all algorithms. This is because the more costly operations like sorting, selection, cloning and mutation will be done in exactly the same way in all algorithms.
 The parameters for the original CLONALG are shown in Table \ref{tuning}.\\
@@ -163,7 +163,7 @@ The variant with an adaptive selection size shows only an insignificantly worse 
 	\label{tab:espc}
 \end{table}
 When looking at the average percentage the algorithms deviate from the best solution, the greedy algorithm outclasses the CLONALG variants. The average percentage for the greedy is 63.7, the untuned CLONALG achieves 566.6, the tuned CLONALG 693.1 and the ESPC 570.2. These values on their own are not suited to judge the performance of the algorithm because of the wide range in difficulty of the TSP, but the difference compared to the greedy algorithm is very high.\\ The greedy algorithm needed about 52 minutes to complete the whole test run, while the CLONALG variants needed about 19 minutes.
-\section{Time as stopping criteria}
+\section{Results: Time Limitation}
 To test if a fixed amount of runtime yields different results than the no improvements criteria, the algorithms will be applied to another test run. In this run every algorithm runs once on every TSP. The stopping criteria is 25 seconds.\\
 The CLONALG has an average MAE of -0.328 for all TSP compared to the greedy algorithm. This is better than with the criteria set to 10000 iterations without improvement, where this MAE was -0.546. This time the CLONALG achieved a better score on the TSP berlin52, ulysses22, st70, eil51 and eil76 (figure\ref{CLONALG_Time}). The performance of the CLONALG was better with this stopping criteria.
 \begin{figure}[H]
