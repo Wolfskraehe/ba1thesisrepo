@@ -1,8 +1,8 @@
 \chapter{Evaluation}
 \label{chap:eva}
 \section{Setup}
-The CLONALG algorithm will be applied to a set of 17 different TSP problems taken from the TSP library TSPLIB95 \footcite[https://www.iwr.uni-heidelberg.de/groups/comopt/software/TSPLIB95/]{tsplib}. The number after the name of the TSP is the amount of nodes and therefore indicates the difficulty of the TSP. The implementation follows the specification in \cite{DEC02} and is provided by the Optimization Algorithm Toolkit OAT \footcite[http://optalgtoolkit.sourceforge.net/]{oat}. The greedy search algorithm will be applied to the same set of problems, is provided by the author of the OAT and uses a nearest neighbour technique with mutation.\\\\ 
-The stopping criteria for the algorithm will be no improvement after a set amount of evaluations. No improvement means the algorithm did not find a shorter route in it's current iteration compared to the last, this is also called stagnation. 
+The CLONALG algorithm will be applied to a set of 17 different TSP problems taken from the TSP library TSPLIB95 \footcite[https://www.iwr.uni-heidelberg.de/groups/comopt/software/TSPLIB95/]{tsplib}. The number after the name of the TSP is the amount of nodes and therefore indicates the difficulty of the TSP. The implementation follows the specification in \cite{DEC02} and is provided by the Optimization Algorithm Toolkit OAT \footcite[http://optalgtoolkit.sourceforge.net/]{oat}. All algorithms in the OAT are implemented in Java. The greedy search algorithm will be applied to the same set of problems, is provided by the author of the OAT and uses a nearest neighbour technique with mutation.\\\\ 
+The stopping criteria for the algorithm will be no improvement after a set amount of evaluations. No improvement means the algorithm did not find a shorter route in it's current iteration compared to the last, this is also called stagnation. Every algorithm will run 100 times on one TSP, making it 1700 runs for all 17 TSP.
 The criteria for the results are:
 \begin{enumerate}
 	\item 	Score
@@ -25,7 +25,7 @@ Both algorithms will be applied 100 times on every TSP problem.\\\\
 The hardware used consists of a i5-3320M dual core CPU with 2,60ghz each and 8gb of RAM, run on a Windows 10 operating system. All CPU and RAM usage shown in this thesis is after other processes, not related to the algorithm, are taken into account.
 \subsection{Evolution Strategy Parameter Control}
 \label{espc}
-The adaptive CLONALG variation is based on \cite{Garret04} and uses a concept from the evolution strategy \cite{evolution}. The algorithm was able to eliminate all parameters except population size from the CLONALG algorithm. This thesis uses a variant where the selection size n is eliminated and is comparable to variant C1-C4 from \cite{Garret04}. A strategy parameter adjusting selection size will be used. The strategy parameter itself will be adjusted by an evolution strategy constant of 1.3. This constant has been tested empirically and proven to be the most effective \cite{Garret04}. The adjustment will be randomized, the strategy parameter will be either multiplied or divided by the constant based on a 50\% chance. The strategy parameter itself will alter the selection size on each evaluation. However the difference to the original evolution strategy is that a parameter is indirectly adjusted through another parameter \cite{Garret04}. The algorithm used in this thesis generates the strategy parameter out of a gaussian random number, the result are the last selection size + the last strategy parameter * a random gaussian number. This is specific to the parameter generation in the OAT and is not necessary, the generation of the strategy parameter can be done in any other way suitable for the given application.  Naturally, the selection size still has to be initialized and can't be zero. As \cite{Garret04} proposed to start with a small number, the test runs in this thesis will start with a selection size of 1. Another difference to the orignial CLONALG is the absence of random replacements. The population will only be altered by the clones and their mutations. The changes made to the original pseudo code in chapter \ref{chap:ais} are shown in algorithm \ref{algo2}. This variant will be called CLONALG ESPC, standing for Evolution Strategy Parameter Control.\\\\
+The adaptive CLONALG variation is based on \cite{Garret04} and uses a concept from the evolution strategy \cite{evolution}. The algorithm was able to eliminate all parameters except population size from the CLONALG algorithm. This thesis uses a variant where the selection size n is eliminated and is comparable to variant C1-C4 from \cite{Garret04}. For this purpose the CLONALG implementation of the OAT is taken and modified based on the concepts in \cite{Garret04}. A strategy parameter adjusting selection size will be used. The strategy parameter itself will be adjusted by an evolution strategy constant of 1.3. This constant has been tested empirically and proven to be the most effective \cite{Garret04}. The adjustment will be randomized, the strategy parameter will be either multiplied or divided by the constant based on a 50\% chance. The strategy parameter itself will alter the selection size on each evaluation. However the difference to the original evolution strategy is that a parameter is indirectly adjusted through another parameter \cite{Garret04}. The algorithm used in this thesis generates the strategy parameter out of a gaussian random number, the result are the last selection size + the last strategy parameter * a random gaussian number. This is specific to the parameter generation in the OAT and is not necessary, the generation of the strategy parameter can be done in any other way suitable for the given application.  Naturally, the selection size still has to be initialized and can't be zero. As \cite{Garret04} proposed to start with a small number, the test runs in this thesis will start with a selection size of 1. Another difference to the orignial CLONALG is the absence of random replacements. The population will only be altered by the clones and their mutations. The changes made to the original pseudo code in chapter \ref{chap:ais} are shown in algorithm \ref{algo2}. This variant will be called CLONALG ESPC, standing for Evolution Strategy Parameter Control.\\\\
 \begin{algorithm}[H]
 	Set strategy paramater Sp\\
 	Generate initial population C of A antibodies\\
@@ -140,24 +140,24 @@ The variant with an adaptive selection size shows only an insignificantly worse 
 \begin{table}[H]
 	\begin{tabular}{|l|p{2cm}|p{1.6cm}|p{2.2cm}|p{2.4cm}|p{2.4cm}|p{1.7cm}|}
 		\hline
-		TSP       & Average Score & Best Score & Best Percentage &\textbf{ MAE compared to CLONALG} & MAE on Best Score & Average Evalutions \\ \hline
-		a280      & 26559.75      & 24949      & 867.3904614     & -0.002852436            & 0.025331677       & 34025.59           \\ \hline
-		berlin52  & 11120.65      & 9241       & 22.52718112     & -0.003905347            & 0.013851315       & 173022.70          \\ \hline
-		lin105    & 74683.73      & 60638      & 321.7122192     & -0.070331918            & 0.038639137       & 48963.38           \\ \hline
-		pcb442    & 652981.26     & 637838     & 1156.130608     & -0.005310796            & -0.010447794      & 35590.02           \\ \hline
-		pr2392    & 14259316.88   & 14060841   & 3619.484329     & -0.001940763            & 0.004410689       & 31152.73           \\ \hline
-		pr76      & 316531.58     & 278997     & 157.9507947     & -0.052809423            & -0.040201149      & 64605.41           \\ \hline
-		st70      & 1912.1        & 1511       & 123.8518519     & -0.076884054            & -0.000661813      & 68687.03           \\ \hline
-		tsp225    & 31963.99      & 29509      & 653.5495403     & -0.020461463            & 0.013419635       & 36970.86           \\ \hline
-		ulysses22 & 7499.74       & 6901       & 0               & -0.030227715            & 0                 & 27280.05           \\ \hline
-		ch130     & 30748.35      & 27332      & 347.3322422     & 0.022916677             & 0.075332943       & 45024.26           \\ \hline
-		ch150     & 38069.35      & 34981      & 435.8609069     & -0.00488871             & 0.029558903       & 40273.29           \\ \hline
-		eil101    & 2111.16       & 1622       & 157.8696343     & 0.007285094             & 0.204685573       & 53395.42           \\ \hline
-		eil51     & 650.27        & 536        & 25.82159624     & 0.006735664             & 0.029850746       & 118097.23          \\ \hline
-		eil76     & 1405.74       & 1221       & 126.9516729     & -0.020167314            & -0.022113022      & 62993.43           \\ \hline
-		kroA100   & 91818.4       & 75100      & 252.8803684     & 0.047880163             & 0.15412783        & 62252.60           \\ \hline
-		kroC100   & 94006.78      & 82471      & 297.4697576     & 0.004941665             & 0.035127499       & 57812.68           \\ \hline
-		kroD100   & 88897.32      & 75500      & 254.5599699     & 0.049322972             & 0.116622517       & 58883.91           \\ \hline
+		TSP       & Average Score & Best Score & Best Percentage &\textbf{ MAE compared to CLONALG} & MAE on Best Score compared to CLONALG & Average Evalutions \\ \hline
+		a280      & 26559.75      & 24949      & 867.390     & -0.003            & 0.025       & 34025.59           \\ \hline
+		berlin52  & 11120.65      & 9241       & 22.527     & -0.004            & 0.014       & 173022.70          \\ \hline
+		lin105    & 74683.73      & 60638      & 321.712     & -0.070            & 0.039       & 48963.38           \\ \hline
+		pcb442    & 652981.26     & 637838     & 1156.131     & -0.005            & -0.010      & 35590.02           \\ \hline
+		pr2392    & 14259316.88   & 14060841   & 3619.484     & -0.002            & 0.004       & 31152.73           \\ \hline
+		pr76      & 316531.58     & 278997     & 157.951     & -0.052            & -0.040      & 64605.41           \\ \hline
+		st70      & 1912.1        & 1511       & 123.852     & -0.077            & -0.001      & 68687.03           \\ \hline
+		tsp225    & 31963.99      & 29509      & 653.550     & -0.020            & 0.013       & 36970.86           \\ \hline
+		ulysses22 & 7499.74       & 6901       & 0               & -0.030            & 0                 & 27280.05           \\ \hline
+		ch130     & 30748.35      & 27332      & 347.332     & 0.023             & 0.075       & 45024.26           \\ \hline
+		ch150     & 38069.35      & 34981      & 435.861     & -0.005             & 0.030       & 40273.29           \\ \hline
+		eil101    & 2111.16       & 1622       & 157.870     & 0.007             & 0.205       & 53395.42           \\ \hline
+		eil51     & 650.27        & 536        & 25.822     & 0.007             & 0.030       & 118097.23          \\ \hline
+		eil76     & 1405.74       & 1221       & 126.952     & -0.020            & -0.022      & 62993.43           \\ \hline
+		kroA100   & 91818.4       & 75100      & 252.880     & 0.048             & 0.154        & 62252.60           \\ \hline
+		kroC100   & 94006.78      & 82471      & 297.470     & 0.005             & 0.035       & 57812.68           \\ \hline
+		kroD100   & 88897.32      & 75500      & 254.560     & 0.049             & 0.117       & 58883.91           \\ \hline
 	\end{tabular}
 	\caption{ESPC performance}
 	\label{tab:espc}
