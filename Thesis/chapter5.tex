@@ -64,7 +64,7 @@ The parameter C stands for the initial population, n for the selection size for 
 \end{table} 
 Comparing the performance of the untuned CLONALG to the greedy algorithm shows that the CLONALG algorithm on average performs worse than the greedy search algorithm (figure \ref{CLONALG_Avg}). However the CLONALG was able to find the best solution to the TSP ulysses22 with a MAE of 0.117, while the greedy search algorithm could not as shown in table \ref{tab:clonalg_untuned}.In addition the overall time for solving all problems was also shorter for the CLONALG. The number of evaluations is most of the time smaller for the CLONALG showing that stagnation started earlier. The average MAE for all TSP compared to the greedy algorithm is -0.524. The average MAE for all TSP calculated on the best instead of the average score is in the same range with with a result of -0.546. The mean average error of -0.009 is not significant for the TSP berlin52, highlighting that CLONALG performs equaly good or better on small TSP under 50 nodes, but is less efficient at more difficult TSP compared to the greedy algorithm.
 \begin{figure}[H]
-	\includegraphics[]{Images/CLONALG_Fig_Avg.png}
+	\includegraphics[height=8cm, width=13cm]{Images/CLONALG_Fig_Avg2.png}
 	\caption{MAE on Average Score for CLONALG compared to greedy}
 	\label{CLONALG_Avg}
 \end{figure}
@@ -123,17 +123,17 @@ Comparing the tuned algorithm to the original one shows that the tuned parameter
 \subsection{CLONALG ESPC}
 The variant with an adaptive selection size shows only an insignificantly worse performance with an average MAE of -0.009 for all TSP compared to the tuned CLONALG. An interesting behaviour is seen in the average MAE for all TSP calculated on the best score with 0.039. This value shows that the adaptive CLONALG is better suited to finding the shorter route, but will also produce some worse solutions in the long run. The MAE on the best score was significantly better on eil101, kroA100 and kroD100, the bigger TSP in this setup. These results highlight that an adaptive selection size altered with the evolution strategy and combined with no random replacements can be beneficial to finding the shorter route. On average the CLONALG ESPC needed less evaluations to terminate, the stagnation started earlier. The overall runtime was nearly identical for the original CLONALG and the ESPC, with close to 19 minutes for a complete test run on all 17 TSP. Comparing the ESPC to the greedy algorithm still shows a worse performance of the ESPC, both on average score and in the majority of the best scores. The ESPC found the shorter route on berlin52 with a MAE of 0.022 and the best route on ulysses22 with a MAE of 0.011. The modification enhanced the ability of the algorithm in solving smaller TSP compared to the greedy algorithm, but did not have a measurable impact on its performance on greater TSP (figure \ref{ESCP_greedy}).\\
 \begin{figure}[h]
-\includegraphics[]{Images/ESPC_Fig_Avg.png}
+\includegraphics[height=8cm,width=13cm]{Images/ESPC_Fig_Avg2.png}
 \caption{MAE on Average Score for ESPC compared to CLONALG}
 \label{ESCP_AVG}
 \end{figure}
 \begin{figure}[H]
-	\includegraphics[]{Images/ESPC_Fig_Best.png}
+	\includegraphics[height=8cm,width=13cm]{Images/ESPC_Fig_Best2.png}
 	\caption{MAE on Best Score for ESPC compared to CLONALG}
 	\label{ESCP_Best}
 \end{figure}
 \begin{figure}[H]
-	\includegraphics[]{Images/ESPC_Fig_greedy.png}
+	\includegraphics[height=8cm,width=13cm]{Images/ESPC_Fig_Greedy2.png}
 	\caption{MAE on Best Score for ESPC compared to greedy}
 	\label{ESCP_greedy}
 \end{figure}
@@ -167,20 +167,20 @@ When looking at the average percentage the algorithms deviate from the best solu
 To test if a fixed amount of runtime yields different results than the no improvements criteria, the algorithms will be applied to another test run. In this run every algorithm runs once on every TSP. The stopping criteria is 25 seconds.\\
 The CLONALG has an average MAE of -0.328 for all TSP compared to the greedy algorithm. This is better than with the criteria set to 10000 iterations without improvement, where this MAE was -0.546. This time the CLONALG achieved a better score on the TSP berlin52, ulysses22, st70, eil51 and eil76 (figure\ref{CLONALG_Time}). The performance of the CLONALG was better with this stopping criteria.
 \begin{figure}[H]
-	\includegraphics[]{Images/CLONALG_Time.png}
+	\includegraphics[height=8cm,width=13cm]{Images/CLONALG_Time2.png}
 	\caption{MAE on Best Score for CLONALG compared to greedy with the 25 seconds stopping criteria}
 	\label{CLONALG_Time}
 \end{figure}
 The tuned CLONALG algorithm still performs worse than the untuned, but can achieve a better score for ulysses22, berlin52 and eil51 than the greedy algorithm. It was also able to find a better route for ulysses22 compared to the tuned and the ESPC variant, which was not possible in the previous evaluation.\\
 The ESPC has an average MAE of 0.110 for all TSP compared to the CLONALG and achieves a better score on all TSP except berlin52, st70, eil51, and eil76 (table \ref{ESPC_Time})). The ESPC also shows a better performance when running for 25 seconds compared to the no improvements criteria.
 \begin{figure}[H]
-	\includegraphics[]{Images/ESPC_Time.png}
+	\includegraphics[height=8cm,width=13cm]{Images/ESPC_Time2.png}
 	\caption{MAE on Best Score for ESPC compared to CLONALG with the 25 seconds stopping criteria}
 	\label{ESPC_Time}
 \end{figure}
 The average MAE compared to the greedy algorithm is -0.270, which is better than the previous evaluation of -0.530. The ESPC scored better on the TSP berlin52, ulysses22, eil51 and eil76. These are the same TSP where the ESPC had a worse score than the CLONALG.
 \begin{figure}[H]
-	\includegraphics[]{Images/ESPC_greedy_Time.png}
+	\includegraphics[height=8cm,width=13cm]{Images/ESPC_Greedy_Time2.png}
 	\caption{MAE on Best Score for ESPC compared to greedy with the 25 seconds stopping criteria}
 	\label{ESPC_greedy_TIME}
 \end{figure}

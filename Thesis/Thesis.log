@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.20)  14 JAN 2019 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.11.20)  15 JAN 2019 14:27
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1084,11 +1084,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--64
  []
 
 [13]
-<Images/CLONALG_Fig_Avg.png, id=247, 361.35pt x 216.05719pt>
-File: Images/CLONALG_Fig_Avg.png Graphic file (type png)
-<use Images/CLONALG_Fig_Avg.png>
-Package pdftex.def Info: Images/CLONALG_Fig_Avg.png  used on input line 67.
-(pdftex.def)             Requested size: 361.34912pt x 216.05664pt.
+<Images/CLONALG_Fig_Avg2.png, id=247, 181.1568pt x 108.8868pt>
+File: Images/CLONALG_Fig_Avg2.png Graphic file (type png)
+<use Images/CLONALG_Fig_Avg2.png>
+Package pdftex.def Info: Images/CLONALG_Fig_Avg2.png  used on input line 67.
+(pdftex.def)             Requested size: 369.8839pt x 227.6455pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []|\OT1/cmr/m/n/12 Best Per-
@@ -1109,7 +1109,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--74
 \OT1/cmr/m/n/12 Eval-u-a-
  []
 
-[14 <./Images/CLONALG_Fig_Avg.png>]
+[14 <./Images/CLONALG_Fig_Avg2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 101--101
 \OT1/cmr/bx/n/12 pared to
  []
@@ -1130,25 +1130,25 @@ Overfull \hbox (24.05997pt too wide) in paragraph at lines 99--120
  []
 
 [15]
-<Images/ESPC_Fig_Avg.png, id=261, 363.60844pt x 217.5628pt>
-File: Images/ESPC_Fig_Avg.png Graphic file (type png)
-<use Images/ESPC_Fig_Avg.png>
-Package pdftex.def Info: Images/ESPC_Fig_Avg.png  used on input line 126.
-(pdftex.def)             Requested size: 363.60754pt x 217.56227pt.
-<Images/ESPC_Fig_Best.png, id=262, 363.60844pt x 216.81pt>
-File: Images/ESPC_Fig_Best.png Graphic file (type png)
-<use Images/ESPC_Fig_Best.png>
-Package pdftex.def Info: Images/ESPC_Fig_Best.png  used on input line 131.
-(pdftex.def)             Requested size: 363.60754pt x 216.80946pt.
+<Images/ESPC_Fig_Avg2.png, id=263, 181.1568pt x 108.8868pt>
+File: Images/ESPC_Fig_Avg2.png Graphic file (type png)
+<use Images/ESPC_Fig_Avg2.png>
+Package pdftex.def Info: Images/ESPC_Fig_Avg2.png  used on input line 126.
+(pdftex.def)             Requested size: 369.8839pt x 227.6455pt.
+<Images/ESPC_Fig_Best2.png, id=264, 181.1568pt x 108.8868pt>
+File: Images/ESPC_Fig_Best2.png Graphic file (type png)
+<use Images/ESPC_Fig_Best2.png>
+Package pdftex.def Info: Images/ESPC_Fig_Best2.png  used on input line 131.
+(pdftex.def)             Requested size: 369.8839pt x 227.6455pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Images/ESPC_Fig_greedy.png, id=263, 363.60844pt x 218.31563pt>
-File: Images/ESPC_Fig_greedy.png Graphic file (type png)
-<use Images/ESPC_Fig_greedy.png>
-Package pdftex.def Info: Images/ESPC_Fig_greedy.png  used on input line 136.
-(pdftex.def)             Requested size: 363.60754pt x 218.31508pt.
+<Images/ESPC_Fig_Greedy2.png, id=265, 181.1568pt x 108.8868pt>
+File: Images/ESPC_Fig_Greedy2.png Graphic file (type png)
+<use Images/ESPC_Fig_Greedy2.png>
+Package pdftex.def Info: Images/ESPC_Fig_Greedy2.png  used on input line 136.
+(pdftex.def)             Requested size: 369.8839pt x 227.6455pt.
 [16]
 Underfull \hbox (badness 10000) in paragraph at lines 143--143
 []|\OT1/cmr/m/n/12 Average
@@ -1219,26 +1219,26 @@ Overfull \hbox (43.01968pt too wide) in paragraph at lines 141--162
 [][] 
  []
 
-[17 <./Images/ESPC_Fig_Avg.png> <./Images/ESPC_Fig_Best.png>] [18 <./Images/ESP
-C_Fig_greedy.png>]
-<Images/CLONALG_Time.png, id=283, 361.35pt x 216.81pt>
-File: Images/CLONALG_Time.png Graphic file (type png)
-<use Images/CLONALG_Time.png>
-Package pdftex.def Info: Images/CLONALG_Time.png  used on input line 170.
-(pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
-<Images/ESPC_Time.png, id=285, 362.10281pt x 224.33812pt>
-File: Images/ESPC_Time.png Graphic file (type png)
-<use Images/ESPC_Time.png>
-Package pdftex.def Info: Images/ESPC_Time.png  used on input line 177.
-(pdftex.def)             Requested size: 362.10191pt x 224.33757pt.
- [19 <./Images/CLONALG_Time.png>]
-<Images/ESPC_greedy_Time.png, id=292, 365.11406pt x 219.82124pt>
-File: Images/ESPC_greedy_Time.png Graphic file (type png)
-<use Images/ESPC_greedy_Time.png>
-Package pdftex.def Info: Images/ESPC_greedy_Time.png  used on input line 183.
-(pdftex.def)             Requested size: 365.11316pt x 219.8207pt.
- [20 <./Images/ESPC_Time.png> <./Images/ESPC_greedy_Time.png>]
-<Images/pr2392.jpg, id=301, 463.7325pt x 635.37375pt>
+[17 <./Images/ESPC_Fig_Avg2.png> <./Images/ESPC_Fig_Best2.png>] [18 <./Images/E
+SPC_Fig_Greedy2.png>]
+<Images/CLONALG_Time2.png, id=288, 181.1568pt x 108.8868pt>
+File: Images/CLONALG_Time2.png Graphic file (type png)
+<use Images/CLONALG_Time2.png>
+Package pdftex.def Info: Images/CLONALG_Time2.png  used on input line 170.
+(pdftex.def)             Requested size: 369.8839pt x 227.6455pt.
+<Images/ESPC_Time2.png, id=290, 181.1568pt x 108.8868pt>
+File: Images/ESPC_Time2.png Graphic file (type png)
+<use Images/ESPC_Time2.png>
+Package pdftex.def Info: Images/ESPC_Time2.png  used on input line 177.
+(pdftex.def)             Requested size: 369.8839pt x 227.6455pt.
+ [19 <./Images/CLONALG_Time2.png>]
+<Images/ESPC_Greedy_Time2.png, id=298, 181.1568pt x 108.8868pt>
+File: Images/ESPC_Greedy_Time2.png Graphic file (type png)
+<use Images/ESPC_Greedy_Time2.png>
+Package pdftex.def Info: Images/ESPC_Greedy_Time2.png  used on input line 183.
+(pdftex.def)             Requested size: 369.8839pt x 227.6455pt.
+ [20 <./Images/ESPC_Time2.png> <./Images/ESPC_Greedy_Time2.png>]
+<Images/pr2392.jpg, id=309, 463.7325pt x 635.37375pt>
 File: Images/pr2392.jpg Graphic file (type jpg)
 <use Images/pr2392.jpg>
 Package pdftex.def Info: Images/pr2392.jpg  used on input line 190.
@@ -1309,7 +1309,7 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  17168 strings out of 492969
- 286824 string characters out of 3135849
+ 286859 string characters out of 3135849
  623102 words of memory out of 3000000
  20596 multiletter control sequences out of 15000+200000
  11433 words of font info for 45 fonts, out of 3000000 for 9000
@@ -1328,9 +1328,9 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (34 pages, 596243 bytes).
+Output written on Thesis.pdf (34 pages, 664465 bytes).
 PDF statistics:
- 510 PDF objects out of 1000 (max. 8388607)
+ 518 PDF objects out of 1000 (max. 8388607)
  114 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
