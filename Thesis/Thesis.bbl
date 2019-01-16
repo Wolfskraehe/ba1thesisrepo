@@ -192,6 +192,27 @@
     \field{year}{2002}
   \endentry
 
+  \entry{pr2392}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CW}{%
+         family={Cook},
+         familyi={C\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CW1}
+    \strng{fullhash}{CW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Coo}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+  \field{note}{\url{http://www.math.uwaterloo.ca/tsp/history/tspinfo/pr2392_info.html}[Accessed:
+  16.01.2019]}
+    \field{title}{University of Waterloo, Traveling Salesman Problem}
+  \endentry
+
   \entry{DEC02}{article}{}
     \name{author}{2}{}{%
       {{hash=dCLN}{%
